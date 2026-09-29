@@ -1,0 +1,4472 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="Ndour Materiel's — électronique, informatique, services de proximité, mobile money, Canal+ et fournitures scolaires à Ndiaganiao."
+    name="description" />
+  <title>Ndour Materiel's | Une solution à vos problèmes !</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --blue: #1456d9;
+      --blue2: #0d3ea4;
+      --orange: #f07b32;
+      --ink: #101a2b;
+      --muted: #64748b;
+      --bg: #f6f8fc;
+      --white: #fff;
+      --line: #e6eaf1;
+      --green: #13a56b;
+      --shadow: 0 18px 50px rgba(20, 45, 90, .10);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800
+    }
+
+    .brand img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 12px
+    }
+
+    .brand span {
+      font-family: Manrope;
+      font-size: 18px
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      color: #40516b
+    }
+
+    .navlinks a:hover {
+      color: var(--blue)
+    }
+
+    .navcta {
+      padding: 11px 16px;
+      background: var(--blue);
+      color: white;
+      border-radius: 10px
+    }
+
+    .hero {
+      padding: 74px 0 56px;
+      background: radial-gradient(circle at 82% 20%, rgba(20, 86, 217, .13), transparent 32%), linear-gradient(135deg, #fff 0%, #f5f8ff 100%)
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 54px;
+      align-items: center
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: #eaf0ff;
+      color: var(--blue2);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 18px
+    }
+
+    .hero h1 {
+      font-family: Manrope;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.03;
+      letter-spacing: -2.5px;
+      margin-bottom: 20px
+    }
+
+    .hero h1 span {
+      color: var(--blue)
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 28px
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 19px;
+      border-radius: 11px;
+      font-weight: 700
+    }
+
+    .btn.primary {
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 10px 24px rgba(20, 86, 217, .22)
+    }
+
+    .btn.secondary {
+      background: white;
+      border: 1px solid var(--line);
+      color: var(--ink)
+    }
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero-card:before {
+      content: '';
+      position: absolute;
+      inset: auto -60px -90px auto;
+      width: 230px;
+      height: 230px;
+      background: rgba(20, 86, 217, .08);
+      border-radius: 50%
+    }
+
+    .hero-logo {
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .hero-logo img {
+      max-width: 90%;
+      max-height: 260px;
+      object-fit: contain;
+      mix-blend-mode: multiply
+    }
+
+    .hero-mini {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px
+    }
+
+    .mini {
+      padding: 12px;
+      background: #f8faff;
+      border: 1px solid #edf1f8;
+      border-radius: 13px;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    .mini b {
+      display: block;
+      color: var(--blue);
+      font-size: 17px
+    }
+
+    section {
+      padding: 84px 0
+    }
+
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 38px
+    }
+
+    .kicker {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 9px
+    }
+
+    .section-head h2 {
+      font-family: Manrope;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 12px
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 8px 30px rgba(20, 45, 90, .055)
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: #edf3ff;
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    .card h3 {
+      font-family: Manrope;
+      font-size: 20px;
+      margin-bottom: 8px
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 17px
+    }
+
+    .tag {
+      background: #f4f6fa;
+      border: 1px solid #e8ecf3;
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #46556c
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 36px;
+      align-items: stretch
+    }
+
+    .feature-side {
+      min-width: 0
+    }
+
+    .feature-item-trigger {
+      width: 100%;
+      appearance: none;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      position: relative;
+      padding-right: 54px
+    }
+
+    .feature-item-trigger:after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #edf3ff;
+      color: var(--blue2);
+      font-size: 21px;
+      font-weight: 800;
+      transition: transform .3s ease, background .3s ease, color .3s ease
+    }
+
+    .feature-item-trigger:hover {
+      border-color: #c7d6f4;
+      background: #fbfdff
+    }
+
+    .feature-item-trigger[aria-expanded="true"] {
+      border-color: #b8ccf3;
+      background: linear-gradient(135deg, #f7faff, #fff);
+      box-shadow: 0 16px 38px rgba(20, 86, 217, .10)
+    }
+
+    .feature-item-trigger[aria-expanded="true"]:after {
+      content: '×';
+      transform: translateY(-50%) rotate(90deg);
+      background: var(--blue);
+      color: #fff
+    }
+
+    .feature-item-trigger .feature-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 12px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      color: var(--blue2);
+      opacity: .85
+    }
+
+    .feature-item-trigger .feature-cta:before {
+      content: 'Voir le mini-catalogue';
+    }
+
+    .accessory-accordion {
+      border-radius: 22px;
+      transition: box-shadow .35s ease, transform .35s ease;
+      background: #fff;
+    }
+
+    .accessory-accordion:has(.feature-item-trigger[aria-expanded="true"]) {
+      box-shadow: 0 18px 44px rgba(20, 45, 90, .08);
+      transform: translateY(-1px);
+    }
+
+    .accessory-accordion .feature-item-trigger {
+      border-radius: 22px;
+    }
+
+    .accessory-accordion .feature-item-trigger[aria-expanded="true"] {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none;
+    }
+
+    .accessory-accordion .accessory-catalogue {
+      margin-top: 0;
+      border: 1px solid #b8ccf3;
+      border-top: 0;
+      border-radius: 0 0 22px 22px;
+      background: linear-gradient(145deg, #f8fbff, #fff);
+    }
+
+    .accessory-accordion .accessory-catalogue-shell {
+      border: 0;
+      border-radius: 0 0 22px 22px;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    .accessory-catalogue {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: grid-template-rows .55s cubic-bezier(.2, .8, .2, 1), opacity .35s ease, transform .45s ease;
+      margin-top: 0
+    }
+
+    .phone-mini-catalogue {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: grid-template-rows .55s cubic-bezier(.2, .8, .2, 1), opacity .35s ease, transform .45s ease;
+      margin-top: 0
+    }
+
+    .phone-mini-catalogue.is-open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      transform: none;
+      margin-top: 15px
+    }
+
+    .phone-mini-inner {
+      min-height: 0;
+      overflow: hidden
+    }
+
+    .phone-mini-shell {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid #dce7fb;
+      background: linear-gradient(145deg, #f8fbff, #fff);
+      box-shadow: 0 18px 45px rgba(20, 45, 90, .07);
+      position: relative;
+      overflow: hidden
+    }
+
+    .phone-mini-shell:before {
+      content: '';
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 40px solid rgba(20, 86, 217, .045);
+      right: -120px;
+      top: -125px;
+      pointer-events: none
+    }
+
+    .phone-mini-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+      position: relative
+    }
+
+    .phone-mini-head h4 {
+      font-family: Manrope;
+      font-size: 22px;
+      margin: 2px 0 4px
+    }
+
+    .phone-mini-head p {
+      color: var(--muted);
+      font-size: 12px;
+      max-width: 520px;
+      margin: 0
+    }
+
+    .phone-mini-count {
+      flex: none;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: #eaf2ff;
+      color: var(--blue2);
+      font-size: 11px;
+      font-weight: 900
+    }
+
+    .phone-mini-filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 0 0 15px;
+      position: relative
+    }
+
+    .phone-mini-filter {
+      appearance: none;
+      border: 1px solid #dfe7f3;
+      background: #fff;
+      color: #40516b;
+      border-radius: 999px;
+      padding: 8px 11px;
+      font: 700 11px 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease
+    }
+
+    .phone-mini-filter:hover {
+      transform: translateY(-2px);
+      border-color: #bfd0f1;
+      color: var(--blue2)
+    }
+
+    .phone-mini-filter[aria-pressed="true"] {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+      box-shadow: 0 8px 18px rgba(20, 86, 217, .18)
+    }
+
+    .phone-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 13px;
+      position: relative
+    }
+
+    .accessory-catalogue.is-open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      transform: none;
+      margin-top: 15px
+    }
+
+    .accessory-catalogue-inner {
+      min-height: 0;
+      overflow: hidden
+    }
+
+    .accessory-catalogue-shell {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid #dce7fb;
+      background: linear-gradient(145deg, #f8fbff, #fff);
+      box-shadow: 0 18px 45px rgba(20, 45, 90, .07);
+      position: relative;
+      overflow: hidden
+    }
+
+    .accessory-catalogue-shell:before {
+      content: '';
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 36px solid rgba(37, 99, 235, .045);
+      right: -110px;
+      top: -115px;
+      pointer-events: none
+    }
+
+    .accessory-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+      position: relative
+    }
+
+    .accessory-head h4 {
+      font-family: Manrope;
+      font-size: 22px;
+      margin: 2px 0 4px
+    }
+
+    .accessory-head p {
+      color: var(--muted);
+      font-size: 12px;
+      max-width: 430px;
+      margin: 0
+    }
+
+    .accessory-count {
+      flex: none;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: #eaf2ff;
+      color: var(--blue2);
+      font-size: 11px;
+      font-weight: 900
+    }
+
+    .accessory-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+      position: relative
+    }
+
+    .accessory-card {
+      background: #fff;
+      border: 1px solid #e6ebf3;
+      border-radius: 17px;
+      overflow: hidden;
+      box-shadow: 0 8px 22px rgba(20, 45, 90, .055);
+      animation: accessoryCardIn .55s cubic-bezier(.2, .8, .2, 1) both
+    }
+
+    .accessory-card:nth-child(2) {
+      animation-delay: .05s
+    }
+
+    .accessory-card:nth-child(3) {
+      animation-delay: .1s
+    }
+
+    .accessory-card:nth-child(4) {
+      animation-delay: .15s
+    }
+
+    .accessory-card:nth-child(5) {
+      animation-delay: .2s
+    }
+
+    .accessory-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(20, 45, 90, .10);
+      border-color: #cfdcf4
+    }
+
+    .accessory-images {
+      height: 155px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: #edf1f7;
+      overflow: hidden
+    }
+
+    .accessory-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #fff;
+      transition: transform .45s ease, filter .45s ease
+    }
+
+    .accessory-card:hover .accessory-images img {
+      transform: scale(1.045)
+    }
+
+    .accessory-images.single-image {
+      grid-template-columns: 1fr;
+      background: #fff
+    }
+
+    .accessory-images.single-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      grid-column: 1
+    }
+
+    .accessory-body {
+      padding: 13px
+    }
+
+    .accessory-body .product-brand {
+      margin-bottom: 3px
+    }
+
+    .accessory-body h5 {
+      font-family: Manrope;
+      font-size: 16px;
+      margin: 0 0 5px
+    }
+
+    .accessory-body p {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+      margin: 0 0 10px
+    }
+
+    .accessory-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 9px 10px;
+      border-radius: 10px;
+      background: #edf3ff;
+      color: var(--blue2);
+      font-size: 11px;
+      font-weight: 900;
+      transition: transform .2s ease, background .2s ease, color .2s ease
+    }
+
+    .accessory-wa:hover {
+      transform: translateY(-2px);
+      background: var(--blue);
+      color: #fff
+    }
+
+    .accessory-note {
+      margin: 12px 2px 0;
+      color: var(--muted);
+      font-size: 11px
+    }
+
+    @keyframes accessoryCardIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px) scale(.985)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .feature-panel {
+      border-radius: 26px;
+      min-height: 430px;
+      padding: 34px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      overflow: hidden;
+      background: #111
+    }
+
+    .feature-panel:before {
+      content: '';
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border: 70px solid rgba(255, 255, 255, .08);
+      border-radius: 50%;
+      right: -130px;
+      top: -130px;
+      z-index: 2;
+      pointer-events: none
+    }
+
+    .feature-panel-slideshow {
+      isolation: isolate
+    }
+
+    .feature-panel-slides {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: #111;
+      overflow: hidden
+    }
+
+    .feature-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0;
+      transform: scale(1.035);
+      transition: opacity 1s ease, transform 4s ease;
+      filter: saturate(1.04)
+    }
+
+    .feature-slide.is-active {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    .feature-panel-shade {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(5, 12, 24, .08) 0%, rgba(5, 12, 24, .18) 35%, rgba(5, 12, 24, .78) 100%);
+      pointer-events: none
+    }
+
+    .feature-panel-content {
+      position: relative;
+      z-index: 3;
+      max-width: 520px;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, .45)
+    }
+
+    .feature-panel h3 {
+      font-family: Manrope;
+      font-size: 32px;
+      line-height: 1.12;
+      position: relative
+    }
+
+    .feature-panel p {
+      opacity: .94;
+      margin-top: 10px;
+      position: relative
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px
+    }
+
+    .feature-item {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      padding: 20px
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 5px
+    }
+
+    .feature-item span {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .catalogue {
+      margin-top: 46px
+    }
+
+    .catalogue-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 20px
+    }
+
+    .catalogue-head h3 {
+      font-family: Manrope;
+      font-size: 28px
+    }
+
+    .catalogue-head p {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 560px
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px
+    }
+
+    .product-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(20, 45, 90, .055);
+      transition: transform .2s ease, box-shadow .2s ease
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(20, 45, 90, .10)
+    }
+
+    .product-image {
+      height: 250px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain
+    }
+
+    .product-body {
+      padding: 18px
+    }
+
+    .product-brand {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      color: var(--orange);
+      font-weight: 800
+    }
+
+    .product-body h4 {
+      font-family: Manrope;
+      font-size: 21px;
+      margin: 5px 0 7px
+    }
+
+    .product-body p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px
+    }
+
+    .product-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #edf3ff;
+      color: var(--blue2);
+      font-weight: 800;
+      font-size: 13px
+    }
+
+    .catalogue-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .product-order {
+      margin-top: 12px
+    }
+
+    .product-order a {
+      background: var(--blue);
+      color: #fff
+    }
+
+    .product-order a:hover {
+      background: var(--blue2)
+    }
+
+    .wa-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      margin-top: 10px
+    }
+
+    .wa-action:hover {
+      filter: brightness(.94)
+    }
+
+    .card .wa-action {
+      margin-top: 16px
+    }
+
+    .request-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 16px
+    }
+
+    .request-list .wa-action {
+      margin-top: 0;
+      font-size: 12px;
+      padding: 10px 11px
+    }
+
+    .request-note {
+      margin-top: 22px;
+      padding: 17px 19px;
+      background: #eef6ff;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      color: #40516b;
+      font-size: 14px
+    }
+
+    .request-note strong {
+      color: var(--blue2);
+      margin-right: 5px
+    }
+
+    .assurance {
+      background: linear-gradient(135deg, #f0faf6 0%, #ffffff 58%, #eef8f4 100%)
+    }
+
+    .assurance-grid {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 38px;
+      align-items: center
+    }
+
+    .assurance-visual {
+      background: #fff;
+      border: 1px solid #d8eee5;
+      border-radius: 24px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden
+    }
+
+    .assurance-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px
+    }
+
+    .assurance-copy h2 {
+      font-family: Manrope;
+      font-size: 42px;
+      line-height: 1.1;
+      margin-bottom: 14px
+    }
+
+    .assurance-copy>p {
+      color: #536b63;
+      font-size: 17px;
+      max-width: 680px
+    }
+
+    .assurance-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 24px 0
+    }
+
+    .assurance-benefit {
+      background: #fff;
+      border: 1px solid #d8eee5;
+      border-radius: 16px;
+      padding: 16px
+    }
+
+    .assurance-benefit strong {
+      display: block;
+      color: #075b45;
+      margin-bottom: 4px
+    }
+
+    .assurance-benefit span {
+      color: #64748b;
+      font-size: 13px
+    }
+
+    .insurance-form {
+      margin-top: 24px;
+      padding: 26px;
+      border: 1px solid #bfe4d6;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 18px 50px rgba(6, 78, 59, .10)
+    }
+
+    .insurance-form[hidden] {
+      display: none
+    }
+
+    .insurance-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px
+    }
+
+    .insurance-head .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #e7f7f0;
+      color: #087653;
+      font-size: 25px;
+      margin: 0
+    }
+
+    .insurance-head h3 {
+      font-family: Manrope;
+      font-size: 24px
+    }
+
+    .insurance-form>p {
+      color: #64748b;
+      margin-bottom: 18px
+    }
+
+    .insurance-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    .insurance-fields .field-label:first-child,
+    .insurance-fields .full {
+      grid-column: 1/-1
+    }
+
+    .insurance-form .field-label {
+      margin: 0
+    }
+
+    .insurance-form .request-input:focus {
+      outline: 2px solid rgba(8, 118, 83, .18);
+      border-color: #078653
+    }
+
+    .payment-choice {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 7px
+    }
+
+    .payment-option {
+      border: 1px solid #d8e9e3;
+      border-radius: 12px;
+      padding: 12px;
+      background: #fbfefd;
+      cursor: pointer
+    }
+
+    .payment-option:has(input:checked) {
+      border-color: #078653;
+      box-shadow: 0 0 0 2px rgba(8, 118, 83, .10)
+    }
+
+    .payment-option input {
+      margin-right: 7px
+    }
+
+    .insurance-form .btn.primary {
+      background: #087653;
+      box-shadow: 0 10px 24px rgba(8, 118, 83, .18)
+    }
+
+    .insurance-form .btn.primary:hover {
+      background: #075b45
+    }
+
+    .insurance-note {
+      margin-top: 12px;
+      color: #64748b;
+      font-size: 12px
+    }
+
+    .insurance-form .selected-file {
+      color: #087653
+    }
+
+    .insurance-trigger {
+      background: #087653 !important;
+      color: #fff !important;
+      box-shadow: 0 10px 24px rgba(8, 118, 83, .18)
+    }
+
+    .insurance-trigger:hover {
+      background: #075b45 !important
+    }
+
+    .insurance-mini {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #eaf8f2;
+      color: #075b45;
+      font-size: 13px
+    }
+
+    .insurance-mini strong {
+      display: block;
+      margin-bottom: 3px
+    }
+
+    .school {
+      background: #fff3e9
+    }
+
+    .school-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 36px;
+      align-items: center
+    }
+
+    .school h2 {
+      font-family: Manrope;
+      font-size: 42px;
+      line-height: 1.1;
+      margin-bottom: 15px
+    }
+
+    .school p {
+      color: #6d584b;
+      max-width: 650px
+    }
+
+    .school-box {
+      background: white;
+      border: 1px solid #f0d8c5;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow)
+    }
+
+    .school-box h3 {
+      font-family: Manrope;
+      margin-bottom: 12px
+    }
+
+    .school-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px
+    }
+
+    .school-items div {
+      padding: 11px 12px;
+      background: #fffaf6;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    .school-photo-wall {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      align-items: start;
+      margin-top: 4px;
+      padding: 10px 8px 4px
+    }
+
+    .school-photo {
+      background: #fff;
+      border: 9px solid #fff;
+      border-bottom-width: 26px;
+      border-radius: 3px;
+      box-shadow: 0 16px 32px rgba(74, 55, 40, .18);
+      overflow: hidden;
+      position: relative;
+      transition: transform .28s ease, box-shadow .28s ease
+    }
+
+    .school-photo:nth-child(1) {
+      transform: rotate(-2.2deg)
+    }
+
+    .school-photo:nth-child(2) {
+      transform: rotate(1.4deg);
+      margin-top: 12px
+    }
+
+    .school-photo:nth-child(3) {
+      transform: rotate(-1deg);
+      margin-top: 4px
+    }
+
+    .school-photo:hover {
+      transform: translateY(-5px) rotate(0deg);
+      box-shadow: 0 22px 38px rgba(74, 55, 40, .22)
+    }
+
+    .school-photo img {
+      display: block;
+      width: 100%;
+      height: 255px;
+      object-fit: cover;
+      object-position: center
+    }
+
+    .school-photo figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 26px;
+      background: #fff;
+      color: #8a6a55;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .canal {
+      background: radial-gradient(circle at 85% 15%, rgba(0, 116, 217, .18), transparent 34%), linear-gradient(135deg, #07111f 0%, #101827 52%, #050a12 100%);
+      color: white;
+      position: relative;
+      overflow: hidden
+    }
+
+    .canal:before {
+      content: '';
+      position: absolute;
+      inset: auto -10% -45% 35%;
+      height: 360px;
+      background: radial-gradient(circle, rgba(0, 154, 255, .18), transparent 68%);
+      pointer-events: none
+    }
+
+    .canal-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 42px;
+      align-items: center;
+      position: relative;
+      z-index: 1
+    }
+
+    .canal h2 {
+      font-family: Manrope;
+      font-size: 44px;
+      line-height: 1.08;
+      margin-bottom: 14px
+    }
+
+    .canal p {
+      color: #c4cfdd;
+      margin: 14px 0 22px;
+      max-width: 690px
+    }
+
+    .canal-kicker {
+      color: #55b8ff !important
+    }
+
+    .canal-visual {
+      position: relative;
+      min-height: 350px;
+      display: grid;
+      place-items: center
+    }
+
+    .canal-screen {
+      width: min(100%, 470px);
+      aspect-ratio: 16/10;
+      border-radius: 26px;
+      padding: 10px;
+      background: linear-gradient(145deg, #28364a, #080d15);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(255, 255, 255, .08);
+      transform: rotate(2deg)
+    }
+
+    .canal-screen-inner {
+      height: 100%;
+      border-radius: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px;
+      background: radial-gradient(circle at 70% 20%, rgba(29, 158, 255, .45), transparent 32%), linear-gradient(145deg, #0d2943, #08111d 62%, #02070c);
+      overflow: hidden;
+      position: relative
+    }
+
+    .canal-screen-inner:after {
+      content: '+';
+      position: absolute;
+      right: -20px;
+      bottom: -72px;
+      font: 900 230px/1 Manrope;
+      color: rgba(255, 255, 255, .035)
+    }
+
+    .canal-logo {
+      font: 900 34px/1 Manrope;
+      letter-spacing: -1px
+    }
+
+    .canal-logo span {
+      color: #39a9ff
+    }
+
+    .canal-screen-title {
+      font: 800 25px/1.1 Manrope;
+      max-width: 270px
+    }
+
+    .canal-screen-sub {
+      font-size: 13px;
+      color: #b9c9d8
+    }
+
+    .canal-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .canal-pill {
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .05);
+      font-size: 11px;
+      color: #dce9f4
+    }
+
+    .canal-service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 28px
+    }
+
+    .canal-service {
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 18px;
+      padding: 20px;
+      background: rgba(255, 255, 255, .045);
+      transition: .25s ease;
+      cursor: pointer;
+      text-align: left;
+      color: white
+    }
+
+    .canal-service:hover {
+      transform: translateY(-4px);
+      border-color: rgba(71, 177, 255, .5);
+      background: rgba(71, 177, 255, .08)
+    }
+
+    .canal-service .service-icon {
+      font-size: 25px;
+      margin-bottom: 10px
+    }
+
+    .canal-service strong {
+      display: block;
+      font-family: Manrope;
+      font-size: 16px;
+      margin-bottom: 5px
+    }
+
+    .canal-service span {
+      display: block;
+      color: #aebdcc;
+      font-size: 12px;
+      line-height: 1.45
+    }
+
+    .canal-form {
+      margin-top: 22px;
+      padding: 24px;
+      border: 1px solid rgba(71, 177, 255, .25);
+      border-radius: 20px;
+      background: rgba(3, 10, 19, .72);
+      backdrop-filter: blur(10px)
+    }
+
+    .canal-form[hidden] {
+      display: none
+    }
+
+    .canal-form h3 {
+      font-family: Manrope;
+      font-size: 22px;
+      margin-bottom: 6px
+    }
+
+    .canal-form p {
+      font-size: 13px;
+      margin: 0 0 18px;
+      color: #aebdcc
+    }
+
+    .canal-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .canal-fields .full {
+      grid-column: 1/-1
+    }
+
+    .canal-form .field-label {
+      margin: 0;
+      color: #dce9f4
+    }
+
+    .canal-form .request-input {
+      background: #0d1724;
+      border-color: #27384b;
+      color: white
+    }
+
+    .canal-form .request-input:focus {
+      outline: 2px solid rgba(71, 177, 255, .18);
+      border-color: #39a9ff
+    }
+
+    .canal-form .btn.primary {
+      background: #168fe0;
+      box-shadow: 0 10px 25px rgba(22, 143, 224, .2);
+      margin-top: 16px;
+      width: 100%
+    }
+
+    .canal-note {
+      font-size: 11px !important;
+      color: #8192a4 !important;
+      margin-top: 10px !important
+    }
+
+    .canal-choice {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 7px
+    }
+
+    .canal-option {
+      border: 1px solid #27384b;
+      border-radius: 12px;
+      padding: 11px;
+      background: #0d1724;
+      cursor: pointer;
+      font-size: 13px
+    }
+
+    .canal-option:has(input:checked) {
+      border-color: #39a9ff;
+      box-shadow: 0 0 0 2px rgba(57, 169, 255, .08)
+    }
+
+    .map-section {
+      background: #f1f5fb
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 26px
+    }
+
+    .contact-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 15px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin-bottom: 10px;
+      background: #fff;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease
+    }
+
+    .contact-row:last-of-type {
+      margin-bottom: 0
+    }
+
+    .contact-row.contact-link {
+      cursor: pointer
+    }
+
+    .contact-row.contact-link:hover {
+      transform: translateY(-2px);
+      border-color: #cfdcff;
+      box-shadow: 0 8px 22px rgba(20, 45, 90, .08)
+    }
+
+    .contact-row .ci {
+      font-size: 22px;
+      flex: 0 0 auto
+    }
+
+    .contact-row strong {
+      display: block
+    }
+
+    .contact-row span {
+      font-size: 14px;
+      color: var(--muted)
+    }
+
+    .contact-row span a {
+      color: var(--blue2);
+      font-weight: 700
+    }
+
+    .contact-row span a:hover {
+      text-decoration: underline
+    }
+
+    .map {
+      min-height: 390px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow)
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 390px;
+      border: 0
+    }
+
+    footer {
+      background: #0b1220;
+      color: #b8c0cf;
+      padding: 35px 0
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center
+    }
+
+    .footer-brand {
+      color: #fff;
+      font-family: Manrope;
+      font-size: 18px
+    }
+
+    .small {
+      font-size: 13px
+    }
+
+    .footer-signature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, .12)
+    }
+
+    .footer-signature span {
+      font-size: 12px;
+      color: #b8c0cf
+    }
+
+    .footer-signature span strong {
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: .2px
+    }
+
+    .footer-signature img {
+      width: 92px;
+      height: 38px;
+      object-fit: contain;
+      display: block
+    }
+
+    .footer-signature a {
+      display: inline-flex;
+      align-items: center
+    }
+
+    .telephonie-section {
+      background: #f8faff
+    }
+
+    .phone-brand-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px
+    }
+
+    .phone-brand-card {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 18px;
+      padding: 12px 12px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(20, 45, 90, .055);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      min-width: 0
+    }
+
+    .phone-brand-card:hover {
+      transform: translateY(-3px);
+      border-color: #cbd8f5;
+      box-shadow: 0 14px 34px rgba(20, 45, 90, .10)
+    }
+
+    .phone-brand-card[aria-expanded="true"] {
+      border-color: var(--blue);
+      box-shadow: 0 12px 30px rgba(20, 86, 217, .14);
+      background: #f8fbff
+    }
+
+    .brand-card-image {
+      width: 100%;
+      height: 128px;
+      border-radius: 13px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid #edf1f7
+    }
+
+    .brand-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 7px
+    }
+
+    .phone-brand-card strong {
+      display: block;
+      font-family: Manrope;
+      font-size: 16px;
+      line-height: 1.2
+    }
+
+    .phone-brand-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+      margin-top: 2px;
+      min-height: 30px
+    }
+
+    .brand-card-arrow {
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 700;
+      transition: transform .2s ease;
+      line-height: 1
+    }
+
+    .phone-brand-card[aria-expanded="true"] .brand-card-arrow {
+      transform: rotate(90deg)
+    }
+
+    .phone-panels {
+      margin-top: 10px
+    }
+
+    .brand-panel {
+      display: none;
+      padding-top: 18px
+    }
+
+    .brand-panel.is-open {
+      display: block
+    }
+
+    .brand-panel .catalogue {
+      margin-top: 20px
+    }
+
+    .brand-panel .catalogue-head {
+      margin-bottom: 20px
+    }
+
+    .brand-panel .catalogue-note {
+      padding-bottom: 4px
+    }
+
+    @media(max-width:1100px) {
+      .phone-brand-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .navlinks {
+        display: none
+      }
+
+      .hero-grid,
+      .feature,
+      .school-grid,
+      .canal-grid,
+      .contact-grid {
+        grid-template-columns: 1fr
+      }
+
+      .canal-visual {
+        order: -1;
+        min-height: 280px
+      }
+
+      .cards {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .catalogue-head {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .hero {
+        padding-top: 50px
+      }
+
+      .hero-card {
+        max-width: 620px;
+        margin: auto
+      }
+
+      .feature-panel {
+        min-height: 300px
+      }
+    }
+
+    @media(max-width:620px) {
+      .feature-panel {
+        min-height: 360px;
+        padding: 25px
+      }
+
+      .feature-panel h3 {
+        font-size: 27px
+      }
+
+      .feature-panel p {
+        font-size: 14px
+      }
+
+      .feature-slide {
+        object-position: center
+      }
+
+      .feature-panel-shade {
+        background: linear-gradient(180deg, rgba(5, 12, 24, .12) 0%, rgba(5, 12, 24, .2) 28%, rgba(5, 12, 24, .82) 100%)
+      }
+    }
+
+    @media(max-width:620px) {
+      .phone-brand-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      section {
+        padding: 62px 0
+      }
+
+      .cards {
+        grid-template-columns: 1fr
+      }
+
+      .hero h1 {
+        font-size: 46px
+      }
+
+      .section-head h2,
+      .school h2,
+      .canal h2 {
+        font-size: 32px
+      }
+
+      .feature-list,
+      .school-items {
+        grid-template-columns: 1fr
+      }
+
+      .canal-service-grid {
+        grid-template-columns: 1fr
+      }
+
+      .canal-fields {
+        grid-template-columns: 1fr
+      }
+
+      .canal-fields .full {
+        grid-column: auto
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .product-image {
+        height: 220px
+      }
+
+      .nav {
+        height: 68px
+      }
+
+      .brand img {
+        width: 44px;
+        height: 44px
+      }
+
+      .hero-card {
+        padding: 20px
+      }
+
+      .hero-logo {
+        height: 220px
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+
+    /* Alive motion system — Ndour Materiel's */
+    .site-intro {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 46%, rgba(37, 99, 235, .26), transparent 28%),
+        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, .14), transparent 30%),
+        linear-gradient(135deg, #07142f 0%, #0b2252 52%, #07142f 100%);
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .55s ease, visibility .55s ease
+    }
+
+    .site-intro.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none
+    }
+
+    .site-intro:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .18;
+      background-image: linear-gradient(rgba(255, 255, 255, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .08) 1px, transparent 1px);
+      background-size: 44px 44px;
+      transform: perspective(700px) rotateX(58deg) scale(1.5) translateY(18%);
+      transform-origin: center bottom;
+      animation: introGrid 2.8s ease-out both
+    }
+
+    .intro-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(2px);
+      pointer-events: none
+    }
+
+    .intro-glow-a {
+      width: 280px;
+      height: 280px;
+      background: rgba(37, 99, 235, .2);
+      animation: introGlowA 2.5s ease-out both
+    }
+
+    .intro-glow-b {
+      width: 160px;
+      height: 160px;
+      background: rgba(56, 189, 248, .12);
+      animation: introGlowB 2.5s ease-out both
+    }
+
+    .intro-inner {
+      position: relative;
+      z-index: 2;
+      width: min(560px, 90vw);
+      height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center
+    }
+
+    .intro-logo-wrap {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      display: grid;
+      place-items: center
+    }
+
+    .intro-logo-card {
+      position: relative;
+      z-index: 3;
+      width: 178px;
+      height: 178px;
+      border-radius: 32px;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .35);
+      animation: introLogoCard 1.05s cubic-bezier(.16, 1, .3, 1) .08s both
+    }
+
+    .intro-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply
+    }
+
+    .intro-ring {
+      position: absolute;
+      inset: 4px;
+      border: 1px solid rgba(147, 197, 253, .55);
+      border-radius: 50%;
+      animation: introRing 2.1s cubic-bezier(.2, .8, .2, 1) .05s both
+    }
+
+    .intro-ring:before,
+    .intro-ring:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #60a5fa;
+      box-shadow: 0 0 18px #60a5fa;
+      transform: translateX(-50%)
+    }
+
+    .intro-ring:after {
+      top: auto;
+      bottom: -4px;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      box-shadow: 0 0 14px #fff
+    }
+
+    .intro-ring-inner {
+      inset: 28px;
+      border-color: rgba(96, 165, 250, .26);
+      animation-duration: 1.7s;
+      animation-delay: .18s
+    }
+
+    .intro-orbit {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 4
+    }
+
+    .intro-orbit span {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .18);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+      font-size: 19px
+    }
+
+    .orbit-one span:nth-child(1) {
+      left: 10px;
+      top: 105px;
+      animation: introIconLeft .9s cubic-bezier(.2, .9, .2, 1) .45s both
+    }
+
+    .orbit-one span:nth-child(2) {
+      right: 18px;
+      top: 58px;
+      animation: introIconRight .95s cubic-bezier(.2, .9, .2, 1) .55s both
+    }
+
+    .orbit-one span:nth-child(3) {
+      right: 0;
+      bottom: 72px;
+      animation: introIconRight .9s cubic-bezier(.2, .9, .2, 1) .65s both
+    }
+
+    .orbit-two span:nth-child(1) {
+      left: 52px;
+      bottom: 26px;
+      animation: introIconLeft .9s cubic-bezier(.2, .9, .2, 1) .58s both
+    }
+
+    .orbit-two span:nth-child(2) {
+      right: 68px;
+      bottom: 8px;
+      animation: introIconRight .9s cubic-bezier(.2, .9, .2, 1) .7s both
+    }
+
+    .orbit-two span:nth-child(3) {
+      left: 2px;
+      top: 48px;
+      animation: introIconLeft .9s cubic-bezier(.2, .9, .2, 1) .72s both
+    }
+
+    .intro-name {
+      margin-top: 5px;
+      font-family: Manrope;
+      font-size: clamp(23px, 4vw, 34px);
+      font-weight: 900;
+      letter-spacing: -.6px;
+      color: #fff;
+      opacity: 0;
+      animation: introName .7s ease 1.05s both
+    }
+
+    .intro-tagline {
+      margin-top: 2px;
+      color: rgba(255, 255, 255, .72);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .35px;
+      opacity: 0;
+      animation: introName .7s ease 1.18s both
+    }
+
+    .intro-line {
+      width: 170px;
+      height: 3px;
+      margin-top: 17px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, .16);
+      overflow: hidden;
+      opacity: 0;
+      animation: introFade .3s ease .72s forwards
+    }
+
+    .intro-line span {
+      display: block;
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #60a5fa, #fff, #60a5fa);
+      animation: introLine 1.1s ease .78s forwards
+    }
+
+    body.intro-active {
+      overflow: hidden
+    }
+
+    /* Scroll reveals */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px) scale(.985);
+      transition: opacity .7s ease, transform .75s cubic-bezier(.2, .75, .2, 1)
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-delay-1 {
+      transition-delay: .08s
+    }
+
+    .reveal-delay-2 {
+      transition-delay: .16s
+    }
+
+    .reveal-delay-3 {
+      transition-delay: .24s
+    }
+
+
+    /* Dynamic hero announcement zone */
+    .hero-announcement {
+      position: relative;
+      overflow: hidden;
+      margin-top: 24px;
+      min-height: 132px;
+      border-radius: 22px;
+      padding: 22px 24px;
+      color: #fff;
+      isolation: isolate;
+      box-shadow: 0 16px 34px rgba(15, 23, 42, .14);
+      background: linear-gradient(120deg, #1456d9, #0ea5e9);
+      transition: background 1.2s ease, box-shadow .35s ease, transform .35s ease;
+    }
+
+    .hero-announcement:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, .18)
+    }
+
+    .hero-announcement:before,
+    .hero-announcement:after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(2px)
+    }
+
+    .hero-announcement:before {
+      width: 180px;
+      height: 180px;
+      right: -55px;
+      top: -80px;
+      background: rgba(255, 255, 255, .16)
+    }
+
+    .hero-announcement:after {
+      width: 130px;
+      height: 130px;
+      left: -50px;
+      bottom: -65px;
+      background: rgba(255, 255, 255, .10)
+    }
+
+    .announcement-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 800;
+      opacity: .9;
+      margin-bottom: 8px
+    }
+
+    .announcement-kicker span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 0 5px rgba(255, 255, 255, .12)
+    }
+
+    .hero-announcement h3 {
+      margin: 0 0 7px;
+      font-family: Manrope;
+      font-size: clamp(20px, 2.2vw, 28px);
+      line-height: 1.12;
+      letter-spacing: -.6px
+    }
+
+    .hero-announcement p {
+      margin: 0;
+      max-width: 580px;
+      color: rgba(255, 255, 255, .9);
+      font-size: 14px;
+      line-height: 1.55
+    }
+
+    .announcement-placeholder {
+      margin-top: 13px;
+      font-size: 11px;
+      font-weight: 700;
+      opacity: .78
+    }
+
+    @keyframes announcementGlow {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: .72
+      }
+
+      50% {
+        transform: scale(1.08);
+        opacity: 1
+      }
+    }
+
+    .hero-announcement:before {
+      animation: announcementGlow 5s ease-in-out infinite
+    }
+
+    @media(max-width:620px) {
+      .hero-announcement {
+        min-height: 145px;
+        padding: 20px;
+        border-radius: 19px;
+        margin-top: 20px
+      }
+
+      .hero-announcement h3 {
+        font-size: 22px
+      }
+    }
+
+    /* Subtle motion throughout the page */
+    .hero-card {
+      animation: heroCardFloat 5.5s ease-in-out 1.8s infinite
+    }
+
+    .hero-logo img {
+      animation: heroLogoFloat 4.5s ease-in-out 2s infinite
+    }
+
+    .btn {
+      transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px rgba(20, 86, 217, .16)
+    }
+
+    .card,
+    .phone-brand-card,
+    .feature-item,
+    .contact-card,
+    .school-box,
+    .canal-service,
+    .mini {
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease
+    }
+
+    .card:hover,
+    .phone-brand-card:hover,
+    .feature-item:hover,
+    .contact-card:hover,
+    .school-box:hover,
+    .canal-service:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 38px rgba(20, 45, 90, .11);
+      border-color: rgba(37, 99, 235, .22)
+    }
+
+    .brand img {
+      transition: transform .3s ease
+    }
+
+    .brand:hover img {
+      transform: rotate(-3deg) scale(1.05)
+    }
+
+    @keyframes introGrid {
+      0% {
+        opacity: 0;
+        transform: perspective(700px) rotateX(58deg) scale(1.65) translateY(25%)
+      }
+
+      100% {
+        opacity: .18;
+        transform: perspective(700px) rotateX(58deg) scale(1.5) translateY(18%)
+      }
+    }
+
+    @keyframes introGlowA {
+      0% {
+        transform: scale(.45);
+        opacity: 0
+      }
+
+      45% {
+        opacity: 1
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: .65
+      }
+    }
+
+    @keyframes introGlowB {
+      0% {
+        transform: scale(.2);
+        opacity: 0
+      }
+
+      55% {
+        opacity: 1
+      }
+
+      100% {
+        transform: scale(1.1);
+        opacity: .55
+      }
+    }
+
+    @keyframes introLogoCard {
+      0% {
+        opacity: 0;
+        transform: translateY(-80px) rotate(-9deg) scale(.72)
+      }
+
+      55% {
+        opacity: 1;
+        transform: translateY(8px) rotate(2deg) scale(1.04)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes introRing {
+      0% {
+        opacity: 0;
+        transform: scale(.25) rotate(-25deg)
+      }
+
+      65% {
+        opacity: 1;
+        transform: scale(1.06) rotate(8deg)
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(0)
+      }
+    }
+
+    @keyframes introIconLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-48px) scale(.6)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes introIconRight {
+      0% {
+        opacity: 0;
+        transform: translateX(48px) scale(.6)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes introName {
+      from {
+        opacity: 0;
+        transform: translateY(12px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes introFade {
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes introLine {
+      to {
+        width: 100%
+      }
+    }
+
+    @keyframes heroCardFloat {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-7px)
+      }
+    }
+
+    @keyframes heroLogoFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1)
+      }
+
+      50% {
+        transform: translateY(-5px) scale(1.015)
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .site-intro:before,
+      .intro-glow,
+      .intro-logo-card,
+      .intro-ring,
+      .intro-orbit span,
+      .intro-name,
+      .intro-tagline,
+      .intro-line,
+      .intro-line span,
+      .hero-card,
+      .hero-logo img {
+        animation: none !important
+      }
+
+      .intro-logo-card,
+      .intro-ring,
+      .intro-orbit span,
+      .intro-name,
+      .intro-tagline,
+      .intro-line {
+        opacity: 1;
+        transform: none
+      }
+
+      .intro-line span {
+        width: 100%
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none
+      }
+
+      .btn,
+      .card,
+      .phone-brand-card,
+      .feature-item,
+      .contact-card,
+      .school-box,
+      .canal-service,
+      .mini,
+      .brand img {
+        transition: none
+      }
+
+      html {
+        scroll-behavior: auto
+      }
+    }
+
+
+    /* Mobile Money highlight */
+    .mobile-money-section {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 14% 18%, rgba(34, 197, 94, .08), transparent 28%),
+        radial-gradient(circle at 86% 22%, rgba(249, 115, 22, .09), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+    }
+
+    .mobile-money-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .mobile-money-card {
+      position: relative;
+      overflow: hidden;
+      padding: 26px;
+      border: 1px solid rgba(30, 64, 175, .1);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 14px 38px rgba(20, 45, 90, .08);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .mobile-money-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 22px 48px rgba(20, 45, 90, .13);
+    }
+
+    .mobile-money-card:after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -70px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      opacity: .13;
+      pointer-events: none;
+    }
+
+    .wave-card:after {
+      background: #38bdf8
+    }
+
+    .orange-card:after {
+      background: #f97316
+    }
+
+    .mobile-money-brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mobile-money-logo {
+      width: 82px;
+      height: 82px;
+      border-radius: 20px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      flex: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+      background: #fff;
+    }
+
+    .mobile-money-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
+    .orange-logo-wrap {
+      background: #fff
+    }
+
+    .orange-logo-wrap img {
+      object-fit: contain !important;
+      padding: 6px
+    }
+
+    .mobile-money-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    .mobile-money-brand h3 {
+      margin: 0;
+      font-size: 25px
+    }
+
+    .mobile-money-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 22px 0 20px;
+    }
+
+    .mobile-money-services span {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .wave-card .mobile-money-services span:first-child {
+      background: #e0f2fe;
+      color: #0369a1
+    }
+
+    .orange-card .mobile-money-services span:first-child {
+      background: #ffedd5;
+      color: #c2410c
+    }
+
+    .mobile-money-btn {
+      width: 100%;
+      border: 0;
+      background: #0f172a;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .wave-card .mobile-money-btn {
+      background: #0284c7
+    }
+
+    .orange-card .mobile-money-btn {
+      background: #f97316
+    }
+
+    .mobile-money-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+      padding: 15px 18px;
+      border-radius: 16px;
+      background: #eef6ff;
+      color: #475569;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .mobile-money-note strong {
+      color: #0f3b82
+    }
+
+    .mobile-money-hero-btn {
+      background: #0f172a !important;
+      color: #fff !important
+    }
+
+    .intro-payment-logo {
+      width: 48px !important;
+      height: 48px !important;
+      padding: 4px !important;
+      border-radius: 14px !important;
+      background: rgba(255, 255, 255, .94) !important;
+      overflow: hidden;
+      display: grid !important;
+      place-items: center;
+    }
+
+    .intro-payment-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain !important;
+      display: block
+    }
+
+    .intro-wave-logo img {
+      border-radius: 10px
+    }
+
+    .intro-orange-logo img {
+      padding: 2px;
+      background: #fff;
+      border-radius: 9px
+    }
+
+    @media (max-width:900px) {
+      .mobile-money-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media (max-width:620px) {
+      .mobile-money-card {
+        padding: 20px
+      }
+
+      .mobile-money-logo {
+        width: 70px;
+        height: 70px
+      }
+
+      .mobile-money-brand h3 {
+        font-size: 22px
+      }
+    }
+
+    /* Informatique service request forms */
+    .informatique-cards .wa-action {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      text-align: left;
+      width: 100%
+    }
+
+    .service-request-panel {
+      margin-top: 24px;
+      padding: 26px;
+      border: 1px solid rgba(37, 99, 235, .14);
+      border-radius: 22px;
+      background: linear-gradient(145deg, #ffffff, #f7fbff);
+      box-shadow: 0 18px 50px rgba(15, 23, 42, .08)
+    }
+
+    .service-request-panel[hidden] {
+      display: none
+    }
+
+    .service-form-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px
+    }
+
+    .service-form-head .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #eff6ff;
+      font-size: 25px
+    }
+
+    .service-form-head h3 {
+      margin: 3px 0 0
+    }
+
+    .service-request-panel>p {
+      color: #64748b;
+      margin: 0 0 18px
+    }
+
+    .file-drop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 125px;
+      padding: 20px;
+      border: 1.5px dashed #93c5fd;
+      border-radius: 18px;
+      background: #f8fbff;
+      cursor: pointer;
+      text-align: center;
+      transition: .2s
+    }
+
+    .file-drop:hover {
+      border-color: #2563eb;
+      background: #eff6ff
+    }
+
+    .file-drop input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none
+    }
+
+    .file-drop span {
+      font-weight: 800;
+      color: #1d4ed8
+    }
+
+    .file-drop small {
+      color: #64748b
+    }
+
+    .selected-file {
+      min-height: 24px;
+      margin: 12px 0;
+      color: #166534;
+      font-size: .94rem;
+      font-weight: 700
+    }
+
+    .selected-file:empty {
+      display: none
+    }
+
+    .field-label {
+      display: block;
+      margin: 14px 0 0;
+      font-weight: 700;
+      color: #334155
+    }
+
+    .field-label>span {
+      font-weight: 500;
+      color: #94a3b8
+    }
+
+    .request-input {
+      width: 100%;
+      margin-top: 7px;
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      font: inherit;
+      background: #fff;
+      box-sizing: border-box
+    }
+
+    .request-input:focus {
+      outline: 2px solid rgba(37, 99, 235, .18);
+      border-color: #2563eb
+    }
+
+    .service-request-panel .btn {
+      margin-top: 18px
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 16px 0
+    }
+
+    .choice-card {
+      display: block;
+      padding: 15px;
+      border: 1px solid #dbeafe;
+      border-radius: 15px;
+      background: #fff;
+      cursor: pointer
+    }
+
+    .choice-card:has(input:checked) {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, .1)
+    }
+
+    .choice-card input {
+      margin-right: 8px
+    }
+
+    .choice-card span {
+      font-weight: 800
+    }
+
+    .choice-card small {
+      display: block;
+      color: #64748b;
+      margin-top: 6px;
+      padding-left: 22px
+    }
+
+    @media(max-width:620px) {
+      .service-request-panel {
+        padding: 20px;
+        border-radius: 18px
+      }
+
+      .choice-grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body class="intro-active">
+  <div class="site-intro" id="siteIntro" aria-hidden="true">
+    <div class="intro-glow intro-glow-a"></div>
+    <div class="intro-glow intro-glow-b"></div>
+    <div class="intro-inner">
+      <div class="intro-orbit orbit-one">
+        <span>📱</span><span>🖨️</span><span>📺</span>
+      </div>
+      <div class="intro-orbit orbit-two">
+        <span class="intro-payment-logo intro-wave-logo"><img src="assets/wave.jpg" alt="Wave"></span>
+        <span>📚</span>
+        <span class="intro-payment-logo intro-orange-logo"><img src="assets/orange-money.png" alt="Orange Money"></span>
+      </div>
+      <div class="intro-logo-wrap">
+        <div class="intro-ring"></div>
+        <div class="intro-ring intro-ring-inner"></div>
+        <div class="intro-logo-card">
+          <img class="intro-logo" src="assets/logo-ndour-materiels.jpeg" alt="Ndour Materiel's">
+        </div>
+      </div>
+      <div class="intro-name">Ndour Materiel's</div>
+      <div class="intro-tagline">Une solution à vos problèmes !</div>
+      <div class="intro-line"><span></span></div>
+    </div>
+  </div>
+  </div>
+  <header>
+    <div class="container nav"><a class="brand" href="#accueil"><img alt="Logo Ndour Materiel's"
+          src="assets/logo-ndour-materiels.jpeg" /><span>Ndour Materiel's</span></a>
+      <nav class="navlinks"><a href="#services">Services</a><a href="#mobile-money">Mobile Money</a><a
+          href="#accessoires">Accessoires</a><a href="#telephonie">Téléphonie</a><a
+          href="#informatique">Informatique</a><a href="#rentree">Rentrée</a><a href="#canal">Canal+</a><a
+          href="#assurance">Assurance Auto</a><a class="navcta" href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">📍 Ndiaganiao · Sénégal</div>
+          <h1>Une solution à vos <span>problèmes !</span></h1>
+          <p>Électronique, informatique, services de proximité, mobile money, Canal+, fournitures scolaires et assurance
+            automobile : Ndour Materiel's rassemble l'essentiel au même endroit.</p>
+          <div class="buttons"><a class="btn primary" href="#services">Découvrir nos services</a><a
+              class="btn secondary" href="tel:+221777772985">📞 Appeler maintenant</a><a class="btn" href="#canal"
+              style="background:#168fe0;color:#fff">📺 Canal+</a><a class="btn mobile-money-hero-btn"
+              href="#mobile-money">💳 Mobile Money</a><a class="btn insurance-trigger" href="#assurance">🛡️ Assurance
+              Auto</a></div>
+          <div class="hero-announcement" id="hero-announcement" aria-label="Actualités et annonces de Ndour Materiel's">
+            <div class="announcement-kicker"><span></span> Espace actualités</div>
+            <h3>✨ QUOI DE NEUF CHEZ NDOUR MATÉRIEL’S ?</h3>
+            <p>Restez informé de nos nouveautés, promotions, annonces et activités.</p>
+            <div class="announcement-placeholder">Aucune annonce active pour le moment · cet espace est prêt pour les
+              prochaines actualités.</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-logo"><img alt="Ndour Materiel's" src="assets/logo-ndour-materiels.jpeg" /></div>
+          <div class="hero-mini">
+            <div class="mini"><b>Électronique</b>Smartphones &amp; accessoires</div>
+            <div class="mini"><b>Services</b>Informatique &amp; documents</div>
+            <div class="mini"><b>Proximité</b>Wave · Orange Money</div>
+            <div class="mini"><b>Maison</b>TV · ventilation · solaire</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Un commerce, plusieurs solutions</div>
+          <h2>Tout ce dont vous avez besoin, à Ndiaganiao.</h2>
+          <p>Une présentation claire des activités de Ndour Materiel's, pensée pour que les clients trouvent rapidement
+            le bon produit ou le bon service.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">📱</div>
+            <h3>Électronique</h3>
+            <p>Smartphones, téléphones à touches, accessoires, audio, TV, éclairage, ventilation et solutions solaires.
+            </p>
+            <div class="tags"><span class="tag">Samsung</span><span class="tag">Tecno</span><span
+                class="tag">Itel</span><span class="tag">TV</span><span class="tag">Baffles</span></div>
+          </div>
+          <div class="card">
+            <div class="icon">💻</div>
+            <h3>Informatique &amp; documents</h3>
+            <p>Saisie, traitement et modification de textes, impressions, photocopies, retouches, cartes, tickets et
+              exposés.</p>
+            <div class="tags"><span class="tag">Impression</span><span class="tag">Photocopie</span><span
+                class="tag">Saisie</span><span class="tag">Design</span></div>
+          </div>
+          <div class="card">
+            <div class="icon">💳</div>
+            <h3>Services de proximité</h3>
+            <p>Wave et Orange Money, assurance automobile, paiement de factures d'eau et autres services pratiques.</p>
+            <div class="tags"><span class="tag">Wave</span><span class="tag">Orange Money</span><span
+                class="tag">Assurance</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-money-section" id="mobile-money">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Mobile Money</div>
+          <h2>Wave &amp; Orange Money, au cœur de vos services de proximité.</h2>
+          <p>Ndour Materiel's facilite vos opérations de proximité avec Wave et Orange Money. Retrouvez rapidement le
+            service recherché et contactez la boutique pour votre demande.</p>
+        </div>
+
+        <div class="mobile-money-grid">
+          <article class="mobile-money-card wave-card">
+            <div class="mobile-money-brand">
+              <div class="mobile-money-logo wave-logo-wrap">
+                <img src="assets/wave.jpg" alt="Wave">
+              </div>
+              <div>
+                <span class="mobile-money-label">Service mobile money</span>
+                <h3>Wave</h3>
+              </div>
+            </div>
+            <div class="mobile-money-services">
+              <span>💰 Dépôt</span>
+              <span>💸 Retrait</span>
+              <span>📤 Envoi d'argent</span>
+            </div>
+            <button type="button" class="btn mobile-money-btn" data-mobile-money="Wave">💬 Demander le service</button>
+          </article>
+
+          <article class="mobile-money-card orange-card">
+            <div class="mobile-money-brand">
+              <div class="mobile-money-logo orange-logo-wrap">
+                <img src="assets/orange-money.png" alt="Orange Money">
+              </div>
+              <div>
+                <span class="mobile-money-label">Service mobile money</span>
+                <h3>Orange Money</h3>
+              </div>
+            </div>
+            <div class="mobile-money-services">
+              <span>💰 Dépôt</span>
+              <span>💸 Retrait</span>
+              <span>📤 Envoi d'argent</span>
+            </div>
+            <button type="button" class="btn mobile-money-btn" data-mobile-money="Orange Money">💬 Demander le
+              service</button>
+          </article>
+        </div>
+
+        <div class="mobile-money-note">
+          <strong>📍 Service de proximité à Ndiaganiao</strong>
+          <span>Pour connaître les modalités du moment, contactez directement Ndour Materiel's.</span>
+        </div>
+      </div>
+    </section>
+    <section id="accessoires">
+      <div class="container feature">
+        <div class="feature-panel feature-panel-slideshow">
+          <div class="feature-panel-slides" aria-hidden="true"><img class="feature-slide is-active"
+              src="assets/accessoire-chargeur-01.webp" alt=""><img class="feature-slide"
+              src="assets/accessoire-chargeur-02.webp" alt=""></div>
+          <div class="feature-panel-shade" aria-hidden="true"></div>
+          <div class="feature-panel-content">
+            <div class="kicker" style="color:#ffb37d">Catalogue</div>
+            <h3>De la petite pièce au grand équipement.</h3>
+            <p>Une gamme pensée pour différents besoins et différents budgets.</p>
+          </div>
+        </div>
+        <div class="feature-side">
+          <div class="feature-list">
+            <div class="accessory-accordion"><button class="feature-item feature-item-trigger" type="button"
+                data-accessory-toggle aria-expanded="false" aria-controls="accessory-catalogue"><strong>🔌
+                  Accessoires</strong><span>Chargeurs, écouteurs, AirPods et protections pour accompagner tous types de
+                  téléphones.</span><small class="feature-cta" aria-hidden="true"></small></button>
+              <div class="accessory-catalogue" id="accessory-catalogue" aria-hidden="true">
+                <div class="accessory-catalogue-inner">
+                  <div class="accessory-catalogue-shell">
+                    <div class="accessory-head">
+                      <div>
+                        <div class="kicker">Mini-catalogue</div>
+                        <h4>Accessoires disponibles</h4>
+                        <p>Une sélection pratique pour équiper, protéger et compléter votre téléphone.</p>
+                      </div><span class="accessory-count">5 familles</span>
+                    </div>
+                    <div class="accessory-grid">
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/accessoire-chargeur-01.webp"
+                            alt="Chargeur pour téléphone"><img loading="lazy" src="assets/accessoire-chargeur-02.webp"
+                            alt="Chargeurs et câbles pour téléphone"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Alimentation</div>
+                          <h5>Chargeurs &amp; câbles</h5>
+                          <p>Des solutions de charge pour différents types de téléphones et connectiques.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20chargeurs%20et%20c%C3%A2bles%20disponibles%2C%20ainsi%20que%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/accessoire-ecouteurs-01.webp"
+                            alt="Écouteurs filaires pour téléphone"><img loading="lazy"
+                            src="assets/accessoire-ecouteurs-02.webp" alt="Écouteurs USB-C pour téléphone"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Audio</div>
+                          <h5>Écouteurs filaires</h5>
+                          <p>Des écouteurs adaptés aux différents formats de connexion utilisés sur téléphone.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20%C3%A9couteurs%20filaires%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/accessoire-airpods-01.webp"
+                            alt="AirPods et écouteurs sans fil"><img loading="lazy"
+                            src="assets/accessoire-airpods-02.webp" alt="AirPods et boîtier de charge"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Sans fil</div>
+                          <h5>AirPods</h5>
+                          <p>Différentes options d'écouteurs sans fil selon votre budget.</p><a class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20voir%20les%20AirPods%20disponibles%20selon%20mon%20budget.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Voir les options</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy"
+                            src="assets/accessoire-protection-ecran-01.webp"
+                            alt="Protection d'écran pour téléphone"><img loading="lazy"
+                            src="assets/accessoire-protection-ecran-02.webp" alt="Protection d'écran pour smartphone">
+                        </div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Protection</div>
+                          <h5>Protections d’écran</h5>
+                          <p>Des protections d’écran pour différentes marques et tailles de téléphone.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20cherche%20une%20protection%20d%27%C3%A9cran%20pour%20mon%20t%C3%A9l%C3%A9phone.%20Je%20voudrais%20conna%C3%AEtre%20les%20mod%C3%A8les%20disponibles%20et%20le%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/accessoire-antichoc-01.webp"
+                            alt="Coques anti-choc pour téléphone"><img loading="lazy"
+                            src="assets/accessoire-antichoc-02.webp" alt="Coques de protection pour smartphone"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Protection</div>
+                          <h5>Coques anti-choc</h5>
+                          <p>Des coques de protection pour différents types et modèles de téléphones.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20cherche%20une%20coque%20anti-choc%20pour%20mon%20t%C3%A9l%C3%A9phone.%20Je%20voudrais%20conna%C3%AEtre%20les%20mod%C3%A8les%20disponibles%20et%20le%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="accessory-note">📌 Modèles, compatibilités, prix et stock à confirmer auprès de Ndour
+                      Materiel's avant achat.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accessory-accordion audio-loisirs-accordion"><button class="feature-item feature-item-trigger"
+                type="button" data-audio-toggle aria-expanded="false" aria-controls="audio-loisirs-catalogue"><strong>🔊
+                  Audio &amp; loisirs</strong><span>Baffles, montres intelligentes, casques et ring lights pour vos
+                  moments de détente et vos créations.</span><small class="feature-cta"
+                  aria-hidden="true"></small></button>
+              <div class="accessory-catalogue" id="audio-loisirs-catalogue" aria-hidden="true">
+                <div class="accessory-catalogue-inner">
+                  <div class="accessory-catalogue-shell">
+                    <div class="accessory-head">
+                      <div>
+                        <div class="kicker">Mini-catalogue</div>
+                        <h4>Audio &amp; loisirs</h4>
+                        <p>Une sélection pour écouter, profiter, créer du contenu et rester connecté.</p>
+                      </div><span class="accessory-count">4 familles</span>
+                    </div>
+                    <div class="accessory-grid">
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/audio-baffle-solaire.webp"
+                            alt="Baffle avec panneau solaire intégré"><img loading="lazy"
+                            src="assets/audio-baffle-compact.webp" alt="Baffle portable compact"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Audio</div>
+                          <h5>Baffles</h5>
+                          <p>Des baffles de différents formats pour écouter votre musique selon vos besoins.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20baffles%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images single-image"><img loading="lazy"
+                            src="assets/audio-montre-connectee.webp" alt="Montre intelligente connectée"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Objets connectés</div>
+                          <h5>Montres intelligentes</h5>
+                          <p>Des montres connectées selon les modèles disponibles.</p><a class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20montres%20intelligentes%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images single-image"><img loading="lazy" src="assets/audio-casque.webp"
+                            alt="Casque audio sans fil"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Audio</div>
+                          <h5>Casques</h5>
+                          <p>Des casques audio pour écouter confortablement votre musique et vos contenus.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20casques%20audio%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/audio-ring-light.webp"
+                            alt="Ring light pour smartphone"><img loading="lazy"
+                            src="assets/audio-ring-light-tripod.webp"
+                            alt="Ring light sur trépied avec support smartphone"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Création de contenu</div>
+                          <h5>Ring lights</h5>
+                          <p>Des solutions d’éclairage avec support smartphone pour photos, vidéos et contenus.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20ring%20lights%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="accessory-note">📌 Modèles, caractéristiques, prix et stock à confirmer auprès de Ndour
+                      Materiel's avant achat.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accessory-accordion maison-energy-accordion"><button class="feature-item feature-item-trigger"
+                type="button" data-maison-toggle aria-expanded="false"
+                aria-controls="maison-energy-catalogue"><strong>💡 Maison &amp; énergie</strong><span>Ventilation,
+                  éclairage et solutions solaires pour la maison et les besoins du quotidien.</span><small
+                  class="feature-cta" aria-hidden="true"></small></button>
+              <div class="accessory-catalogue" id="maison-energy-catalogue" aria-hidden="true">
+                <div class="accessory-catalogue-inner">
+                  <div class="accessory-catalogue-shell">
+                    <div class="accessory-head">
+                      <div>
+                        <div class="kicker">Mini-catalogue</div>
+                        <h4>Maison &amp; énergie</h4>
+                        <p>Des équipements pratiques pour ventiler, éclairer et profiter de solutions solaires.</p>
+                      </div><span class="accessory-count">3 familles</span>
+                    </div>
+                    <div class="accessory-grid">
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/maison-solaire-panneau.webp"
+                            alt="Petit panneau solaire avec câbles"><img loading="lazy"
+                            src="assets/maison-solaire-projecteur.webp" alt="Projecteur solaire rechargeable"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Solaire</div>
+                          <h5>Solutions solaires</h5>
+                          <p>Petits panneaux solaires et équipements d’éclairage solaire selon les besoins disponibles.
+                          </p><a class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20solutions%20solaires%20disponibles%20et%20leurs%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images single-image"><img loading="lazy" src="assets/maison-ampoule.webp"
+                            alt="Ampoule LED décorative"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Éclairage</div>
+                          <h5>Ampoules</h5>
+                          <p>Des ampoules pour différents besoins d’éclairage à la maison.</p><a class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20cherche%20des%20ampoules.%20Je%20voudrais%20conna%C3%AEtre%20les%20mod%C3%A8les%20disponibles%20et%20les%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/maison-ventilateur-01.webp"
+                            alt="Ventilateur sur pied avec télécommande"><img loading="lazy"
+                            src="assets/maison-ventilateur-02.webp" alt="Ventilateur mural"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Ventilation</div>
+                          <h5>Ventilateurs</h5>
+                          <p>Ventilateurs sur pied et muraux pour améliorer le confort à la maison.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20cherche%20un%20ventilateur.%20Je%20voudrais%20conna%C3%AEtre%20les%20mod%C3%A8les%20disponibles%20et%20les%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="accessory-note">📌 Modèles, caractéristiques, prix et stock à confirmer auprès de Ndour
+                      Materiel's avant achat.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accessory-accordion tv-install-accordion"><button class="feature-item feature-item-trigger"
+                type="button" data-tv-toggle aria-expanded="false" aria-controls="tv-install-catalogue"><strong>📺 TV
+                  &amp; installation</strong><span>Téléviseurs et supports TV pour compléter vos
+                  équipements.</span><small class="feature-cta" aria-hidden="true"></small></button>
+              <div class="accessory-catalogue" id="tv-install-catalogue" aria-hidden="true">
+                <div class="accessory-catalogue-inner">
+                  <div class="accessory-catalogue-shell">
+                    <div class="accessory-head">
+                      <div>
+                        <div class="kicker">Mini-catalogue</div>
+                        <h4>TV &amp; installation</h4>
+                        <p>Téléviseurs et supports disponibles chez Ndour Materiel's.</p>
+                      </div><span class="accessory-count">2 familles</span>
+                    </div>
+                    <div class="accessory-grid">
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/tv2.jpg"
+                            alt="Téléviseur disponible chez Ndour Materiel's"><img loading="lazy" src="assets/tv1.jfif"
+                            alt="Téléviseur écran plat"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">TV</div>
+                          <h5>Téléviseurs</h5>
+                          <p>Différents téléviseurs selon les modèles, dimensions et budgets disponibles.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20les%20t%C3%A9l%C3%A9viseurs%20disponibles%2C%20les%20mod%C3%A8les%20et%20les%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                      <article class="accessory-card">
+                        <div class="accessory-images"><img loading="lazy" src="assets/suptv2.jpeg"
+                            alt="Support mural pour téléviseur"><img loading="lazy" src="assets/suptv.jfif"
+                            alt="Support TV orientable"></div>
+                        <div class="accessory-body">
+                          <div class="product-brand">Installation</div>
+                          <h5>Supports TV</h5>
+                          <p>Supports muraux et orientables pour installer votre téléviseur selon votre besoin.</p><a
+                            class="accessory-wa"
+                            href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20cherche%20un%20support%20TV.%20Je%20voudrais%20conna%C3%AEtre%20les%20mod%C3%A8les%20disponibles%20et%20le%20prix.%20Merci%20%21"
+                            target="_blank" rel="noopener">💬 Demander le produit</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="accessory-note">📌 Modèles, dimensions, compatibilités, prix et stock à confirmer auprès
+                      de Ndour Materiel's avant achat.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="telephonie-section" id="telephonie">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Téléphonie</div>
+          <h2>Choisissez une marque pour voir les téléphones disponibles.</h2>
+          <p>Une organisation plus simple pour parcourir rapidement les smartphones et téléphones à touches, sans faire
+            défiler toute la page.</p>
+        </div>
+        <div class="phone-brand-grid">
+          <button aria-expanded="false" class="phone-brand-card" data-panel="panel-samsung" type="button"><span
+              class="brand-card-image"><img src="assets/samsung-a06.jpg"
+                alt="Samsung Galaxy A06"></span><span><strong>Samsung</strong><small>Smartphones · 4
+                modèles</small></span><span class="brand-card-arrow">→</span></button>
+          <button aria-expanded="false" class="phone-brand-card" data-panel="panel-tecno-smart" type="button"><span
+              class="brand-card-image"><img src="assets/tecno-pop-10c.jfif"
+                alt="TECNO POP 10c"></span><span><strong>TECNO</strong><small>Smartphones · 6
+                modèles</small></span><span class="brand-card-arrow">→</span></button>
+          <button aria-expanded="false" class="phone-brand-card" data-panel="panel-itel-smart" type="button"><span
+              class="brand-card-image"><img src="assets/itel-a70.jpg"
+                alt="itel A70"></span><span><strong>itel</strong><small>Smartphones · 4 modèles</small></span><span
+              class="brand-card-arrow">→</span></button>
+          <button aria-expanded="false" class="phone-brand-card" data-panel="panel-tecno-touch" type="button"><span
+              class="brand-card-image"><img src="assets/tecno-t102.webp"
+                alt="TECNO T102"></span><span><strong>TECNO</strong><small>Téléphones à touches · 4
+                modèles</small></span><span class="brand-card-arrow">→</span></button>
+          <button aria-expanded="false" class="phone-brand-card" data-panel="panel-itel-touch" type="button"><span
+              class="brand-card-image"><img src="assets/itel-2160.webp"
+                alt="itel 2160"></span><span><strong>itel</strong><small>Téléphones à touches · 3
+                modèles</small></span><span class="brand-card-arrow">→</span></button>
+        </div>
+        <div class="phone-panels">
+          <div class="brand-panel" id="panel-samsung">
+            <div class="catalogue" id="catalogue-samsung">
+              <div class="catalogue-head">
+                <div>
+                  <div class="kicker">Catalogue produits</div>
+                  <h3>Samsung · Smartphones</h3>
+                </div>
+                <p>Une première sélection de smartphones Samsung présentés directement sur le site. Les prix et
+                  disponibilités peuvent être confirmés auprès de la boutique.</p>
+              </div>
+              <div class="product-grid">
+                <article class="product-card">
+                  <div class="product-image"><img alt="Samsung Galaxy A06" src="assets/samsung-a06.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">Samsung</div>
+                    <h4>Galaxy A06</h4>
+                    <p>Smartphone Samsung · série Galaxy A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20Samsung%20Galaxy%20A06%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="Samsung Galaxy A07" src="assets/samsung-a07.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">Samsung</div>
+                    <h4>Galaxy A07</h4>
+                    <p>Smartphone Samsung · série Galaxy A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20Samsung%20Galaxy%20A07%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="Samsung Galaxy A16 5G" src="assets/samsung-a16.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">Samsung</div>
+                    <h4>Galaxy A16 5G</h4>
+                    <p>Smartphone Samsung · série Galaxy A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20Samsung%20Galaxy%20A16%205G%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="Samsung Galaxy A17" src="assets/samsung-a17.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">Samsung</div>
+                    <h4>Galaxy A17</h4>
+                    <p>Smartphone Samsung · série Galaxy A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20Samsung%20Galaxy%20A17%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue-note">📌 Prix et stock à confirmer auprès de Ndour Materiel's avant achat.</div>
+            </div>
+          </div>
+          <div class="brand-panel" id="panel-tecno-smart">
+            <div class="catalogue" id="catalogue-tecno">
+              <div class="catalogue-head">
+                <div>
+                  <div class="kicker">Catalogue produits</div>
+                  <h3>Tecno · Smartphones</h3>
+                </div>
+                <p>Découvrez une sélection de smartphones TECNO présentés directement sur le site. Les prix et
+                  disponibilités peuvent être confirmés auprès de la boutique.</p>
+              </div>
+              <div class="product-grid">
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO POP 10c" src="assets/tecno-pop-10c.jfif" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>POP 10c</h4>
+                    <p>Smartphone TECNO · POP </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20POP%2010c%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO POP 20" src="assets/tecno-pop-20.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>POP 20</h4>
+                    <p>Smartphone TECNO · POP </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20POP%2020%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO POP 20C" src="assets/tecno-pop-20c.jpeg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>POP 20C</h4>
+                    <p>Smartphone TECNO · POP </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20POP%2020C%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO SPARK 40" src="assets/tecno-spark-40.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>SPARK 40</h4>
+                    <p>Smartphone TECNO · SPARK </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20SPARK%2040%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO SPARK 50" src="assets/tecno-spark-50.jfif" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>SPARK 50</h4>
+                    <p>Smartphone TECNO · SPARK </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20SPARK%2050%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO CAMON 50" src="assets/tecno-camon-50.jfif" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>CAMON 50</h4>
+                    <p>Smartphone TECNO · CAMON </p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20CAMON%2050%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue-note">📌 Prix et stock à confirmer auprès de Ndour Materiel's avant achat.</div>
+            </div>
+          </div>
+          <div class="brand-panel" id="panel-itel-smart">
+            <div class="catalogue" id="catalogue-itel">
+              <div class="catalogue-head">
+                <div>
+                  <div class="kicker">Catalogue produits</div>
+                  <h3>itel · Smartphones</h3>
+                </div>
+                <p>Découvrez une sélection de smartphones itel présentés directement sur le site. Les prix et
+                  disponibilités peuvent être confirmés auprès de la boutique.</p>
+              </div>
+              <div class="product-grid">
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel A70" src="assets/itel-a70.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>A70</h4>
+                    <p>Smartphone itel · série A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%20A70%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel A100C" src="assets/itel-a100c.jfif" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>A100C</h4>
+                    <p>Smartphone itel · série A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%20A100C%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel A200" src="assets/itel-a200.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>A200</h4>
+                    <p>Smartphone itel · série A</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%20A200%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel S26 Ultra" src="assets/itel-s26-ultra.png" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>S26 Ultra</h4>
+                    <p>Smartphone itel · série S</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%20S26%20Ultra%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue-note">📌 Prix et stock à confirmer auprès de Ndour Materiel's avant achat.</div>
+            </div>
+          </div>
+          <div class="brand-panel" id="panel-tecno-touch">
+            <div class="catalogue" id="catalogue-tecno-touches">
+              <div class="catalogue-head">
+                <div>
+                  <div class="kicker">Catalogue produits</div>
+                  <h3>Tecno · Téléphones à touches</h3>
+                </div>
+                <p>Une sélection de téléphones à touches TECNO. Les prix et disponibilités peuvent être confirmés auprès
+                  de la boutique.</p>
+              </div>
+              <div class="product-grid">
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO T102" src="assets/tecno-t102.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>T102</h4>
+                    <p>Téléphone à touches TECNO</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20T102%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO T3136" src="assets/tecno-t3136.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>T3136</h4>
+                    <p>Téléphone à touches TECNO</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20T3136%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO T528" src="assets/tecno-t528.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>T528</h4>
+                    <p>Téléphone à touches TECNO</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20T528%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="TECNO T455" src="assets/tecno-t455.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">TECNO</div>
+                    <h4>T455</h4>
+                    <p>Téléphone à touches TECNO</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20TECNO%20T455%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue-note">📌 Prix et stock à confirmer auprès de Ndour Materiel's avant achat.</div>
+            </div>
+          </div>
+          <div class="brand-panel" id="panel-itel-touch">
+            <div class="catalogue" id="catalogue-itel-touches">
+              <div class="catalogue-head">
+                <div>
+                  <div class="kicker">Catalogue produits</div>
+                  <h3>itel · Téléphones à touches</h3>
+                </div>
+                <p>Une sélection de téléphones à touches itel. Les prix et disponibilités peuvent être confirmés auprès
+                  de la boutique.</p>
+              </div>
+              <div class="product-grid">
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel 2160" src="assets/itel-2160.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>2160</h4>
+                    <p>Téléphone à touches itel</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%202160%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel 5606" src="assets/itel-5606.webp" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>5606</h4>
+                    <p>Téléphone à touches itel</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%205606%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-image"><img alt="itel 5619" src="assets/itel-5619.jpg" /></div>
+                  <div class="product-body">
+                    <div class="product-brand">itel</div>
+                    <h4>5619</h4>
+                    <p>Téléphone à touches itel</p>
+                    <div class="product-order"><a class="product-action"
+                        href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20conna%C3%AEtre%20le%20prix%20du%20itel%205619%2C%20ainsi%20que%20sa%20disponibilit%C3%A9.%20Merci%20%21"
+                        rel="noopener" target="_blank">💬 Demander le prix</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="catalogue-note">📌 Prix et stock à confirmer auprès de Ndour Materiel's avant achat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="informatique" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Services informatiques</div>
+          <h2>Vos documents, prêts quand vous en avez besoin.</h2>
+          <p>Choisissez votre service, préparez votre demande directement sur le site, puis validez-la sur WhatsApp.
+            Pour les fichiers, le site vous indique clairement le document sélectionné afin que vous puissiez le joindre
+            dans WhatsApp.</p>
+        </div>
+        <div class="cards informatique-cards">
+          <div class="card">
+            <div class="icon">📝</div>
+            <h3>Textes &amp; exposés</h3>
+            <p>Saisie, traitement, modification et mise en forme de documents et exposés.</p>
+            <div class="request-list">
+              <button type="button" class="wa-action service-trigger" data-form="saisie-form">📝 Demander une
+                saisie</button>
+              <button type="button" class="wa-action service-trigger" data-form="expose-form">📚 Demander un
+                exposé</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">🖨️</div>
+            <h3>Impression &amp; photocopie</h3>
+            <p>Impressions, photocopies et préparation de documents à tirer.</p>
+            <div class="request-list">
+              <button type="button" class="wa-action service-trigger" data-form="impression-form">🖨️ Imprimer un
+                document</button>
+              <button type="button" class="wa-action service-trigger" data-form="photocopie-form">📄 Faire des
+                photocopies</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Création &amp; retouche</h3>
+            <p>Création de cartes et tickets, retouches d'images ou de documents et restauration de QR codes abîmés.</p>
+            <div class="request-list">
+              <button type="button" class="wa-action service-trigger" data-form="creation-form">🎨 Créer un
+                document</button>
+              <button type="button" class="wa-action service-trigger" data-form="retouche-form">🖼️ Retoucher un
+                fichier</button>
+              <button type="button" class="wa-action service-trigger" data-form="carte-form">🎫 Créer une carte ou un
+                ticket</button>
+              <button type="button" class="wa-action service-trigger" data-form="qr-form">🔳 Restaurer un QR
+                code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-request-panel" id="saisie-form" hidden>
+          <div class="service-form-head"><span class="icon">📝</span>
+            <div>
+              <div class="kicker">Demande de saisie</div>
+              <h3>Chargez votre document</h3>
+            </div>
+          </div>
+          <p>Sélectionnez le document que vous souhaitez faire saisir, modifier ou mettre en forme.</p><label
+            class="file-drop"><input type="file" class="request-file"
+              accept=".pdf,.doc,.docx,.txt,.rtf,.odt,.jpg,.jpeg,.png,.webp"><span>📎 Choisir mon
+              document</span><small>PDF, Word, image ou document texte</small></label>
+          <div class="selected-file" aria-live="polite"></div><button type="button" class="btn primary send-request"
+            data-service="saisie">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="expose-form" hidden>
+          <div class="service-form-head"><span class="icon">📚</span>
+            <div>
+              <div class="kicker">Demande d'exposé</div>
+              <h3>Préparez votre demande</h3>
+            </div>
+          </div><label class="field-label">Thème de l'exposé<input type="text" class="request-input expose-theme"
+              placeholder="Ex. Les changements climatiques" maxlength="180"></label><label class="field-label">Noms des
+            participants<textarea class="request-input expose-participants" rows="3"
+              placeholder="Ex. Awa, Moussa, Fatou"></textarea></label><label class="field-label">Classe / niveau
+            <span>(facultatif)</span><input type="text" class="request-input expose-class"
+              placeholder="Ex. 4e"></label><button type="button" class="btn primary send-request"
+            data-service="exposé">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="impression-form" hidden>
+          <div class="service-form-head"><span class="icon">🖨️</span>
+            <div>
+              <div class="kicker">Demande d'impression</div>
+              <h3>Chargez le document à imprimer</h3>
+            </div>
+          </div>
+          <p>Sélectionnez le document que vous souhaitez imprimer. Après validation, WhatsApp s'ouvrira avec votre
+            demande.</p><label class="file-drop"><input type="file" class="request-file"
+              accept=".pdf,.doc,.docx,.txt,.rtf,.odt,.jpg,.jpeg,.png,.webp"><span>📎 Choisir mon
+              document</span><small>PDF, Word, image ou document texte</small></label>
+          <div class="selected-file" aria-live="polite"></div><button type="button" class="btn primary send-request"
+            data-service="impression">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="photocopie-form" hidden>
+          <div class="service-form-head"><span class="icon">📄</span>
+            <div>
+              <div class="kicker">Demande de photocopies</div>
+              <h3>Chargez votre document</h3>
+            </div>
+          </div>
+          <p>Sélectionnez le document à photocopier, puis validez votre demande.</p><label class="file-drop"><input
+              type="file" class="request-file" accept=".pdf,.doc,.docx,.txt,.rtf,.odt,.jpg,.jpeg,.png,.webp"><span>📎
+              Choisir mon document</span><small>PDF, Word, image ou document texte</small></label>
+          <div class="selected-file" aria-live="polite"></div><label class="field-label">Nombre de copies
+            <span>(facultatif)</span><input type="number" min="1" class="request-input photocopy-count"
+              placeholder="Ex. 5"></label><button type="button" class="btn primary send-request"
+            data-service="photocopie">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="creation-form" hidden>
+          <div class="service-form-head"><span class="icon">🎨</span>
+            <div>
+              <div class="kicker">Création de document</div>
+              <h3>Comment souhaitez-vous expliquer votre idée ?</h3>
+            </div>
+          </div>
+          <div class="choice-grid"><label class="choice-card"><input type="radio" name="creation-mode" value="model"
+                checked><span>📎 J'ai déjà un modèle</span><small>Charger une image ou un document comme
+                référence.</small></label><label class="choice-card"><input type="radio" name="creation-mode"
+                value="description"><span>📝 Je veux le décrire</span><small>Expliquez simplement ce que vous souhaitez
+                créer.</small></label></div>
+          <div class="creation-model"><label class="file-drop"><input type="file" class="request-file"
+                accept=".pdf,.jpg,.jpeg,.png,.webp"><span>📎 Charger mon modèle</span><small>Image ou
+                PDF</small></label>
+            <div class="selected-file" aria-live="polite"></div>
+          </div>
+          <div class="creation-description" hidden><label class="field-label">Décrivez ce que vous souhaitez<textarea
+                class="request-input creation-text" rows="5"
+                placeholder="Ex. Je voudrais une invitation pour un anniversaire..."></textarea></label></div><button
+            type="button" class="btn primary send-request" data-service="création de document">✓ Valider et ouvrir
+            WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="retouche-form" hidden>
+          <div class="service-form-head"><span class="icon">🖼️</span>
+            <div>
+              <div class="kicker">Retouche</div>
+              <h3>Chargez le fichier à retoucher</h3>
+            </div>
+          </div>
+          <p>Sélectionnez l'image ou le document que vous souhaitez faire retoucher.</p><label class="file-drop"><input
+              type="file" class="request-file" accept=".pdf,.jpg,.jpeg,.png,.webp"><span>📎 Choisir mon
+              fichier</span><small>Image ou PDF</small></label>
+          <div class="selected-file" aria-live="polite"></div><button type="button" class="btn primary send-request"
+            data-service="retouche">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="carte-form" hidden>
+          <div class="service-form-head"><span class="icon">🎫</span>
+            <div>
+              <div class="kicker">Carte ou ticket</div>
+              <h3>Présentez votre idée</h3>
+            </div>
+          </div>
+          <div class="choice-grid"><label class="choice-card"><input type="radio" name="carte-mode" value="model"
+                checked><span>📎 J'ai déjà un modèle</span><small>Chargez l'image ou le document qui servira de
+                référence.</small></label><label class="choice-card"><input type="radio" name="carte-mode"
+                value="description"><span>📝 Je veux le décrire</span><small>Décrivez le style et le contenu
+                souhaités.</small></label></div>
+          <div class="carte-model"><label class="file-drop"><input type="file" class="request-file"
+                accept=".pdf,.jpg,.jpeg,.png,.webp"><span>📎 Charger mon modèle</span><small>Image ou
+                PDF</small></label>
+            <div class="selected-file" aria-live="polite"></div>
+          </div>
+          <div class="carte-description" hidden><label class="field-label">Décrivez votre carte ou votre ticket<textarea
+                class="request-input carte-text" rows="5"
+                placeholder="Ex. Je veux une carte d'invitation avec..."></textarea></label></div><button type="button"
+            class="btn primary send-request" data-service="carte ou ticket">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="service-request-panel" id="qr-form" hidden>
+          <div class="service-form-head"><span class="icon">🔳</span>
+            <div>
+              <div class="kicker">Restauration de QR code</div>
+              <h3>Chargez votre QR code</h3>
+            </div>
+          </div>
+          <p>Sélectionnez l'image ou le document contenant le QR code à restaurer.</p><label class="file-drop"><input
+              type="file" class="request-file" accept=".jpg,.jpeg,.png,.webp,.pdf"><span>📎 Choisir mon
+              fichier</span><small>Image ou PDF</small></label>
+          <div class="selected-file" aria-live="polite"></div><button type="button" class="btn primary send-request"
+            data-service="restauration de QR code">✓ Valider et ouvrir WhatsApp</button>
+        </div>
+
+        <div class="request-note"><strong>✅ Comment ça marche ?</strong> Préparez votre demande ici, puis validez-la
+          pour ouvrir WhatsApp avec les informations saisies. Pour un fichier, le nom du document sélectionné sera
+          indiqué dans le message : il faudra simplement joindre le fichier dans WhatsApp avant d'envoyer. Pour les
+          demandes d'exposé ou de création, les informations saisies sont directement préremplies.</div>
+      </div>
+    </section>
+
+    <section class="school" id="rentree">
+      <div class="container school-grid">
+        <div>
+          <div class="kicker">Spécial rentrée</div>
+          <h2>La rentrée se prépare aussi chez Ndour Materiel's.</h2>
+          <p>Fournitures scolaires disponibles en boutique pour aider élèves et familles à préparer la nouvelle année
+            scolaire au même endroit.</p>
+          <div class="buttons" style="margin-top:22px"><a class="btn primary"
+              href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20voudrais%20avoir%20des%20informations%20sur%20les%20fournitures%20scolaires%20disponibles%20pour%20la%20rentr%C3%A9e.%20Merci%20%21"
+              rel="noopener" target="_blank">💬 Se renseigner sur WhatsApp</a></div>
+        </div>
+        <div class="school-box">
+          <h3>Fournitures scolaires</h3>
+          <div class="school-items">
+            <div>📚 Cahiers &amp; blocs</div>
+            <div>✏️ Stylos &amp; crayons</div>
+            <div>📐 Matériel scolaire</div>
+            <div>🎒 Articles de rentrée</div>
+            <div>📎 Petites fournitures</div>
+            <div>🖍️ Matériel d'écriture</div>
+          </div>
+        </div>
+        <div class="school-photo-wall" aria-label="Aperçu des fournitures scolaires disponibles">
+          <figure class="school-photo"><img src="assets/rentree-photo-cahiers.jpeg"
+              alt="Cahiers et fournitures scolaires">
+            <figcaption>Cahiers &amp; fournitures</figcaption>
+          </figure>
+          <figure class="school-photo"><img src="assets/rentree-photo-fournitures.jpeg"
+              alt="Rayon de fournitures scolaires">
+            <figcaption>Fournitures scolaires</figcaption>
+          </figure>
+          <figure class="school-photo"><img src="assets/rentree-photo-sacs.jpeg" alt="Sacs à dos scolaires">
+            <figcaption>Sacs à dos</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="canal" id="canal">
+      <div class="container canal-grid">
+        <div>
+          <div class="kicker canal-kicker">CANAL+ · À LA BOUTIQUE</div>
+          <h2>📺 Votre divertissement à portée de main.</h2>
+          <p>Chez Ndour Materiel's, vous pouvez vous renseigner pour un <strong>abonnement</strong> ou un
+            <strong>réabonnement</strong>, trouver du <strong>matériel Canal+</strong> et être mis en relation avec un
+            <strong>installateur</strong>.</p>
+          <div class="canal-service-grid"><button type="button" class="canal-service"
+              data-canal-form="canal-abonnement">
+              <div class="service-icon">📺</div><strong>Abonnement</strong><span>Préparez votre demande de nouvel
+                abonnement.</span>
+            </button><button type="button" class="canal-service" data-canal-form="canal-reabonnement">
+              <div class="service-icon">🔄</div><strong>Réabonnement</strong><span>Demandez le renouvellement de votre
+                abonnement.</span>
+            </button><button type="button" class="canal-service" data-canal-form="canal-equipement">
+              <div class="service-icon">📡</div><strong>Équipement Canal+</strong><span>Renseignez-vous sur le matériel
+                disponible à la boutique.</span>
+            </button><button type="button" class="canal-service" data-canal-form="canal-installation">
+              <div class="service-icon">🛠️</div><strong>Installation</strong><span>Demandez à être mis en relation avec
+                un installateur.</span>
+            </button></div>
+          <div class="canal-form" id="canal-abonnement" hidden>
+            <h3>📺 Demande d'abonnement</h3>
+            <p>Préparez votre demande, puis envoyez-la directement à Ndour Materiel's sur WhatsApp.</p>
+            <div class="canal-fields"><label class="field-label full">Nom et prénom<input
+                  class="request-input canal-name" type="text" maxlength="120"
+                  placeholder="Ex. Mamadou Ndiaye"></label><label class="field-label">Téléphone<input
+                  class="request-input canal-phone" type="tel" maxlength="30"
+                  placeholder="Ex. 77 123 45 67"></label><label class="field-label">Formule souhaitée
+                <span>(facultatif)</span><input class="request-input canal-plan" type="text" maxlength="80"
+                  placeholder="Si vous connaissez l'offre souhaitée"></label><label class="field-label full">Numéro de
+                décodeur / abonné <span>(facultatif)</span><input class="request-input canal-ref" type="text"
+                  maxlength="80" placeholder="Si vous en avez déjà un"></label></div><button type="button"
+              class="btn primary send-canal" data-canal-type="abonnement">✓ Valider et ouvrir WhatsApp</button>
+            <p class="canal-note">Ndour Materiel's vous confirmera ensuite l'offre, les pièces et les modalités
+              nécessaires.</p>
+          </div>
+          <div class="canal-form" id="canal-reabonnement" hidden>
+            <h3>🔄 Demande de réabonnement</h3>
+            <p>Indiquez vos informations pour que Ndour Materiel's puisse reprendre votre demande.</p>
+            <div class="canal-fields"><label class="field-label full">Nom et prénom<input
+                  class="request-input canal-name" type="text" maxlength="120"
+                  placeholder="Ex. Mamadou Ndiaye"></label><label class="field-label">Téléphone<input
+                  class="request-input canal-phone" type="tel" maxlength="30"
+                  placeholder="Ex. 77 123 45 67"></label><label class="field-label">Numéro d'abonné / décodeur<input
+                  class="request-input canal-ref" type="text" maxlength="80"
+                  placeholder="Votre référence si disponible"></label><label class="field-label full">Formule /
+                précision <span>(facultatif)</span><input class="request-input canal-plan" type="text" maxlength="120"
+                  placeholder="Votre demande ou formule souhaitée"></label></div><button type="button"
+              class="btn primary send-canal" data-canal-type="réabonnement">✓ Valider et ouvrir WhatsApp</button>
+            <p class="canal-note">Ndour Materiel's vous confirmera ensuite les modalités du réabonnement.</p>
+          </div>
+          <div class="canal-form" id="canal-equipement" hidden>
+            <h3>📡 Équipement Canal+</h3>
+            <p>Demandez les informations sur le matériel Canal+ disponible ou nécessaire pour votre installation.</p>
+            <div class="canal-fields"><label class="field-label full">Nom et prénom<input
+                  class="request-input canal-name" type="text" maxlength="120"
+                  placeholder="Ex. Mamadou Ndiaye"></label><label class="field-label">Téléphone<input
+                  class="request-input canal-phone" type="tel" maxlength="30"
+                  placeholder="Ex. 77 123 45 67"></label><label class="field-label">Équipement recherché<input
+                  class="request-input canal-equipment" type="text" maxlength="120"
+                  placeholder="Ex. décodeur, accessoire…"></label><label class="field-label full">Précisions
+                <span>(facultatif)</span><textarea class="request-input canal-details" rows="4"
+                  placeholder="Décrivez votre besoin…"></textarea></label></div><button type="button"
+              class="btn primary send-canal" data-canal-type="équipement">✓ Demander sur WhatsApp</button>
+          </div>
+          <div class="canal-form" id="canal-installation" hidden>
+            <h3>🛠️ Demander un installateur</h3>
+            <p>Transmettez vos coordonnées pour être mis en relation avec un installateur.</p>
+            <div class="canal-fields"><label class="field-label full">Nom et prénom<input
+                  class="request-input canal-name" type="text" maxlength="120"
+                  placeholder="Ex. Mamadou Ndiaye"></label><label class="field-label">Téléphone<input
+                  class="request-input canal-phone" type="tel" maxlength="30"
+                  placeholder="Ex. 77 123 45 67"></label><label class="field-label full">Lieu d'installation<input
+                  class="request-input canal-address" type="text" maxlength="180"
+                  placeholder="Quartier / adresse à Ndiaganiao ou alentours"></label><label class="field-label">Type
+                d'installation <span>(facultatif)</span><input class="request-input canal-install-type" type="text"
+                  maxlength="100" placeholder="Ex. nouvelle installation"></label><label class="field-label">Date
+                souhaitée <span>(facultatif)</span><input class="request-input canal-date" type="date"></label></div>
+            <button type="button" class="btn primary send-canal" data-canal-type="installation">✓ Demander un
+              installateur</button>
+          </div>
+        </div>
+        <div class="canal-visual">
+          <div class="canal-screen">
+            <div class="canal-screen-inner">
+              <div class="canal-logo">CANAL<span>+</span></div>
+              <div>
+                <div class="canal-screen-title">Le divertissement, directement chez vous.</div>
+                <div class="canal-screen-sub">Abonnement · Réabonnement · Équipement · Installation</div>
+              </div>
+              <div class="canal-pills"><span class="canal-pill">📺 Abonnement</span><span class="canal-pill">🔄
+                  Réabonnement</span><span class="canal-pill">📡 Équipement</span><span class="canal-pill">🛠️
+                  Installation</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="assurance" id="assurance">
+      <div class="container assurance-grid">
+        <div class="assurance-visual"><img src="assets/ndour-materiels-assurance.jpeg"
+            alt="Ndour Materiel's Assurance — assurance automobile"></div>
+        <div class="assurance-copy">
+          <div class="kicker" style="color:#087653">Assurance automobile</div>
+          <h2>Votre véhicule bien assuré, en toute sérénité.</h2>
+          <p>Ndour Materiel's propose également un service d'assurance automobile avec accompagnement personnalisé.
+            Préparez votre demande directement en ligne, puis transmettez vos informations à notre équipe sur WhatsApp.
+          </p>
+          <div class="assurance-benefits">
+            <div class="assurance-benefit"><strong>🛡️ Protection</strong><span>Une solution d'assurance adaptée à votre
+                véhicule.</span></div>
+            <div class="assurance-benefit"><strong>🛠️ Assistance</strong><span>Un accompagnement pour préparer votre
+                dossier.</span></div>
+            <div class="assurance-benefit"><strong>💬 WhatsApp</strong><span>Votre demande est transmise directement à
+                Ndour Materiel's.</span></div>
+            <div class="assurance-benefit"><strong>💳 Paiement flexible</strong><span>À la livraison ou via Wave, selon
+                les modalités convenues.</span></div>
+          </div>
+          <div class="buttons"><button type="button" class="btn insurance-trigger insurance-open"
+              data-insurance-form="assurance-form">🛡️ S'assurer maintenant</button></div>
+          <div class="insurance-mini"><strong>Comment ça marche ?</strong> Renseignez les informations demandées →
+            validez → WhatsApp s'ouvre avec votre demande → Ndour Materiel's vous accompagne pour la suite.</div>
+          <div class="insurance-form" id="assurance-form" hidden>
+            <div class="insurance-head"><span class="icon">🛡️</span>
+              <div>
+                <div class="kicker" style="color:#087653">Demande d'assurance auto</div>
+                <h3>Préparez votre demande</h3>
+              </div>
+            </div>
+            <p>Renseignez les informations ci-dessous. Elles seront récapitulées dans votre message WhatsApp.</p>
+            <div class="insurance-fields"><label class="field-label full">Nom complet du propriétaire<input type="text"
+                  class="request-input insurance-owner" placeholder="Ex. Mamadou Ndiaye" maxlength="120"></label><label
+                class="field-label">Numéro de CNI<input type="text" class="request-input insurance-cni"
+                  placeholder="Ex. 1234567890123" maxlength="40"></label><label class="field-label">Téléphone<input
+                  type="tel" class="request-input insurance-phone" placeholder="Ex. 77 123 45 67"
+                  maxlength="30"></label><label class="field-label">Plaque d'immatriculation<input type="text"
+                  class="request-input insurance-plate" placeholder="Ex. DK-1234-AB" maxlength="30"></label><label
+                class="field-label">Marque<input type="text" class="request-input insurance-make"
+                  placeholder="Ex. Toyota" maxlength="60"></label><label class="field-label">Modèle<input type="text"
+                  class="request-input insurance-model" placeholder="Ex. RAV4" maxlength="60"></label><label
+                class="field-label">Année du véhicule<input type="number" class="request-input insurance-year"
+                  min="1900" max="2100" placeholder="Ex. 2022"></label><label class="field-label">Type de
+                véhicule<select class="request-input insurance-type">
+                  <option value="">Sélectionner</option>
+                  <option>Voiture</option>
+                  <option>4x4 / SUV</option>
+                  <option>Moto</option>
+                  <option>Utilitaire</option>
+                  <option>Autre</option>
+                </select></label>
+              <div class="field-label full">Mode de paiement souhaité<div class="payment-choice"><label
+                    class="payment-option"><input type="radio" name="insurance-payment" value="Paiement à la livraison">
+                    Paiement à la livraison</label><label class="payment-option"><input type="radio"
+                      name="insurance-payment" value="Paiement via Wave"> Paiement via Wave</label></div>
+              </div>
+            </div><button type="button" class="btn primary send-insurance" style="width:100%">✓ Valider et envoyer sur
+              WhatsApp</button>
+            <div class="insurance-note">Les informations saisies servent à préparer votre demande. Ndour Materiel's vous
+              confirmera ensuite les pièces, conditions et modalités nécessaires à la souscription.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map-section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Nous trouver</div>
+          <h2>Venez nous rendre visite à Ndiaganiao.</h2>
+          <p>Retrouvez Ndour Materiel's et contactez directement la boutique pour toute question sur un produit ou un
+            service.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card"><a aria-label="Appeler Ndour Materiel’s" class="contact-row contact-link"
+              href="tel:+221777772985">
+              <div class="ci">📞</div>
+              <div><strong>Téléphone</strong><span>+221 77 777 29 85 · Appeler directement</span></div>
+            </a><a aria-label="Envoyer un email à Ndour Materiel’s" class="contact-row contact-link"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ndourmateriels%40gmail.com&amp;su=Contact%20depuis%20le%20site%20Ndour%20Materiel%27s"
+              rel="noopener" target="_blank">
+              <div class="ci">✉️</div>
+              <div><strong>Email</strong><span>ndourmateriels@gmail.com · Envoyer un message</span></div>
+            </a><a aria-label="Contacter Ndour Materiel’s sur WhatsApp" class="contact-row contact-link"
+              href="https://wa.me/221777772985?text=Bonjour%20Ndour%20Materiel%27s%20%F0%9F%91%8B%20Je%20vous%20contacte%20depuis%20votre%20site%20web.%20Je%20voudrais%20avoir%20des%20informations.%20Merci%20%21"
+              rel="noopener" target="_blank">
+              <div class="ci">💬</div>
+              <div><strong>WhatsApp</strong><span>+221 77 777 29 85 · Ouvrir WhatsApp</span></div>
+            </a>
+            <div class="contact-row">
+              <div class="ci">📍</div>
+              <div><strong>Adresse</strong><span>Ndiaganiao, Sénégal</span></div>
+            </div>
+            <div class="contact-row">
+              <div class="ci">🧭</div>
+              <div><strong>Localisation</strong><span>14.535610904544887, -16.72788666867388</span></div>
+            </div><a class="btn primary"
+              href="https://www.google.com/maps/search/?api=1&amp;query=14.535610904544887,-16.72788666867388"
+              rel="noopener" style="width:100%;margin-top:18px" target="_blank">Ouvrir dans Google Maps</a>
+          </div>
+          <div class="map"><iframe loading="lazy"
+              src="https://www.google.com/maps?q=14.535610904544887,-16.72788666867388&amp;z=16&amp;output=embed"
+              title="Localisation de Ndour Materiel's à Ndiaganiao"></iframe></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Ndour Materiel's</div>
+        <div class="small">Une solution à vos problèmes !</div>
+        <div class="footer-signature"><span>Conçu &amp; développé par <strong>K-WEB</strong></span><a href="#"
+            aria-label="K-WEB"><img src="assets/kweb-logo.png" alt="K-WEB"></a></div>
+      </div>
+      <div class="small">© 2026 Ndour Materiel's · Ndiaganiao, Sénégal</div>
+    </div>
+  </footer>
+  <script>
+    // Smooth premium entrance, then reveal content as it enters the viewport.
+    const intro = document.getElementById('siteIntro');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      setTimeout(() => {if (intro) {intro.classList.add('is-hidden'); document.body.classList.remove('intro-active');} }, 2650);
+    } else {
+      if (intro) intro.classList.add('is-hidden');
+      document.body.classList.remove('intro-active');
+    }
+
+
+    // Dynamic hero announcement background. Keep the message area ready even when there is nothing to announce.
+    const announcementBox = document.getElementById('hero-announcement');
+    if (announcementBox && !reduceMotion) {
+      const announcementColors = [
+        'linear-gradient(120deg,#1456d9,#0ea5e9)',
+        'linear-gradient(120deg,#2563eb,#7c3aed)',
+        'linear-gradient(120deg,#0f766e,#06b6d4)',
+        'linear-gradient(120deg,#7c2d12,#ea580c)',
+        'linear-gradient(120deg,#4338ca,#db2777)'
+      ];
+      let announcementColorIndex = 0;
+      setInterval(() => {
+        announcementColorIndex = (announcementColorIndex + 1) % announcementColors.length;
+        announcementBox.style.background = announcementColors[announcementColorIndex];
+      }, 4000);
+    }
+
+    const revealTargets = document.querySelectorAll('main > section, footer, .hero-grid > *, .hero-announcement, .cards > .card, .feature-list > .feature-item, .phone-brand-card, .catalogue, .school-box, .canal-visual, .canal-service, .canal-form, .assurance-visual, .assurance-copy, .insurance-form, .contact-card, .map, .eyebrow, .buttons .btn, .hero-mini .mini, .section-head .kicker, .section-head h2, .section-head p');
+    revealTargets.forEach((el, i) => {el.classList.add('reveal'); if (i % 3 === 1) el.classList.add('reveal-delay-1'); if (i % 3 === 2) el.classList.add('reveal-delay-2');});
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const observer = new IntersectionObserver((entries, obs) => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('is-visible'); obs.unobserve(entry.target);} });}, {threshold: 0.12, rootMargin: '0px 0px -50px 0px'});
+      revealTargets.forEach(el => observer.observe(el));
+    } else revealTargets.forEach(el => el.classList.add('is-visible'));
+
+    document.querySelectorAll('.phone-brand-card').forEach(card => {
+      card.addEventListener('click', () => {const target = document.getElementById(card.dataset.panel); const wasOpen = card.getAttribute('aria-expanded') === 'true'; document.querySelectorAll('.phone-brand-card').forEach(c => c.setAttribute('aria-expanded', 'false')); document.querySelectorAll('.brand-panel').forEach(p => p.classList.remove('is-open')); if (!wasOpen) {card.setAttribute('aria-expanded', 'true'); target.classList.add('is-open'); setTimeout(() => target.scrollIntoView({behavior: 'smooth', block: 'start'}), 60);} });
+    });
+
+
+
+
+    // Electronics accessory mini-catalogue
+    const accessoryToggle = document.querySelector('[data-accessory-toggle]');
+    const accessoryCatalogue = document.getElementById('accessory-catalogue');
+    if (accessoryToggle && accessoryCatalogue) {
+      accessoryToggle.addEventListener('click', () => {
+        const open = accessoryToggle.getAttribute('aria-expanded') === 'true';
+        accessoryToggle.setAttribute('aria-expanded', String(!open));
+        accessoryCatalogue.classList.toggle('is-open', !open);
+        accessoryCatalogue.setAttribute('aria-hidden', String(open));
+        if (!open) {
+          setTimeout(() => accessoryToggle.scrollIntoView({behavior: 'smooth', block: 'nearest'}), 120);
+        }
+      });
+    }
+
+    // Audio & loisirs mini-catalogue
+    const audioToggle = document.querySelector('[data-audio-toggle]');
+    const audioCatalogue = document.getElementById('audio-loisirs-catalogue');
+    if (audioToggle && audioCatalogue) {
+      audioToggle.addEventListener('click', () => {
+        const open = audioToggle.getAttribute('aria-expanded') === 'true';
+        audioToggle.setAttribute('aria-expanded', String(!open));
+        audioCatalogue.classList.toggle('is-open', !open);
+        audioCatalogue.setAttribute('aria-hidden', String(open));
+        if (!open) {
+          setTimeout(() => audioToggle.scrollIntoView({behavior: 'smooth', block: 'nearest'}), 120);
+        }
+      });
+    }
+
+    // Maison & énergie mini-catalogue
+    const maisonToggle = document.querySelector('[data-maison-toggle]');
+    const maisonCatalogue = document.getElementById('maison-energy-catalogue');
+    if (maisonToggle && maisonCatalogue) {
+      maisonToggle.addEventListener('click', () => {
+        const open = maisonToggle.getAttribute('aria-expanded') === 'true';
+        maisonToggle.setAttribute('aria-expanded', String(!open));
+        maisonCatalogue.classList.toggle('is-open', !open);
+        maisonCatalogue.setAttribute('aria-hidden', String(open));
+        if (!open) {
+          setTimeout(() => maisonToggle.scrollIntoView({behavior: 'smooth', block: 'nearest'}), 120);
+        }
+      });
+    }
+
+    // TV & installation mini-catalogue
+    const tvToggle = document.querySelector('[data-tv-toggle]');
+    const tvCatalogue = document.getElementById('tv-install-catalogue');
+    if (tvToggle && tvCatalogue) {
+      tvToggle.addEventListener('click', () => {
+        const open = tvToggle.getAttribute('aria-expanded') === 'true';
+        tvToggle.setAttribute('aria-expanded', String(!open));
+        tvCatalogue.classList.toggle('is-open', !open);
+        tvCatalogue.setAttribute('aria-hidden', String(open));
+        if (!open) {
+          setTimeout(() => tvToggle.scrollIntoView({behavior: 'smooth', block: 'nearest'}), 120);
+        }
+      });
+    }
+
+    // Accessoires showcase slideshow — actual mini-catalogue photos, 3 seconds per image
+    const featureSlides = [
+      'assets/accessoire-chargeur-01.webp', 'assets/accessoire-chargeur-02.webp',
+      'assets/accessoire-ecouteurs-01.webp', 'assets/accessoire-ecouteurs-02.webp',
+      'assets/accessoire-airpods-01.webp', 'assets/accessoire-airpods-02.webp',
+      'assets/accessoire-protection-ecran-01.webp', 'assets/accessoire-protection-ecran-02.webp',
+      'assets/accessoire-antichoc-01.webp', 'assets/accessoire-antichoc-02.webp',
+      'assets/audio-baffle-solaire.webp', 'assets/audio-baffle-compact.webp',
+      'assets/audio-montre-connectee.webp', 'assets/audio-casque.webp',
+      'assets/audio-ring-light.webp', 'assets/audio-ring-light-tripod.webp',
+      'assets/maison-solaire-panneau.webp', 'assets/maison-solaire-projecteur.webp',
+      'assets/maison-ampoule.webp', 'assets/maison-ventilateur-01.webp', 'assets/maison-ventilateur-02.webp',
+      'assets/tv2.jpg', 'assets/tv1.jfif', 'assets/suptv2.jpeg', 'assets/suptv.jfif'
+    ];
+    const featureSlideEls = document.querySelectorAll('.feature-slide');
+    if (featureSlideEls.length === 2 && featureSlides.length > 2) {
+      let featureSlideIndex = 0, featureActive = 0;
+      featureSlides.slice(1).forEach(src => {const img = new Image(); img.src = src;});
+      setInterval(() => {
+        featureSlideIndex = (featureSlideIndex + 1) % featureSlides.length;
+        const incoming = featureSlideEls[1 - featureActive];
+        const outgoing = featureSlideEls[featureActive];
+        incoming.src = featureSlides[featureSlideIndex];
+        incoming.classList.add('is-active');
+        outgoing.classList.remove('is-active');
+        featureActive = 1 - featureActive;
+      }, 3000);
+    }
+
+    // Mobile Money quick requests
+    document.querySelectorAll('.mobile-money-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const service = btn.dataset.mobileMoney || 'Mobile Money';
+        waOpen("Bonjour Ndour Materiel's 👋 Je souhaite effectuer un service " + service + ". Je vous contacte depuis votre site web.");
+      });
+    });
+
+    // Informatique request forms
+    const WA_NUMBER = '221777772985';
+    function waOpen(message) {window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener');}
+    function showFile(input) {
+      const panel = input.closest('.service-request-panel'); const out = panel.querySelector('.selected-file'); const file = input.files && input.files[0];
+      if (file) {const size = file.size < 1024 ? file.size + ' o' : file.size < 1048576 ? (file.size / 1024).toFixed(1) + ' Ko' : (file.size / 1048576).toFixed(1) + ' Mo'; out.textContent = '✅ Document sélectionné : ' + file.name + ' · ' + size;}
+      else out.textContent = '';
+    }
+    document.querySelectorAll('.request-file').forEach(input => input.addEventListener('change', () => showFile(input)));
+    document.querySelectorAll('.service-trigger').forEach(btn => btn.addEventListener('click', () => {
+      const panel = document.getElementById(btn.dataset.form); document.querySelectorAll('.service-request-panel').forEach(p => p.hidden = true); panel.hidden = false; panel.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+    }));
+    function toggleChoice(group, modelSel, descSel) {
+      document.querySelectorAll('input[name="' + group + '"]:checked').forEach(r => {
+        const panel = r.closest('.service-request-panel'); const model = panel.querySelector(modelSel); const desc = panel.querySelector(descSel); const isModel = r.value === 'model'; model.hidden = !isModel; desc.hidden = isModel;
+      });
+    }
+    document.querySelectorAll('input[name="creation-mode"]').forEach(r => r.addEventListener('change', () => toggleChoice('creation-mode', '.creation-model', '.creation-description')));
+    document.querySelectorAll('input[name="carte-mode"]').forEach(r => r.addEventListener('change', () => toggleChoice('carte-mode', '.carte-model', '.carte-description')));
+
+    document.querySelectorAll('.send-request').forEach(btn => btn.addEventListener('click', () => {
+      const panel = btn.closest('.service-request-panel'); const service = btn.dataset.service; let message = 'Bonjour Ndour Materiel\'s 👋\n\n';
+      if (service === 'exposé') {
+        const theme = panel.querySelector('.expose-theme').value.trim(); const participants = panel.querySelector('.expose-participants').value.trim(); const classe = panel.querySelector('.expose-class').value.trim();
+        if (!theme || !participants) {alert('Veuillez renseigner le thème de l\'exposé et les noms des participants.'); return;}
+        message += '📚 Demande d’exposé\nThème : ' + theme + '\nParticipants : ' + participants + (classe ? '\nClasse / niveau : ' + classe : '') + '\n\nMerci.';
+      } else if (service === 'création de document' || service === 'carte ou ticket') {
+        const group = service === 'création de document' ? 'creation-mode' : 'carte-mode'; const mode = panel.querySelector('input[name="' + group + '"]:checked').value;
+        if (mode === 'model') {
+          const file = panel.querySelector('.request-file').files[0]; if (!file) {alert('Veuillez charger votre modèle avant de valider la demande.'); return;}
+          message += '🎨 Demande de ' + service + '\nModèle sélectionné : ' + file.name + '\n\nMerci.';
+        } else {
+          const area = panel.querySelector(service === 'création de document' ? '.creation-text' : '.carte-text'); const text = area.value.trim(); if (!text) {alert('Veuillez décrire ce que vous souhaitez avant de valider.'); return;}
+          message += '🎨 Demande de ' + service + '\nDescription : ' + text + '\n\nMerci.';
+        }
+      } else {
+        const file = panel.querySelector('.request-file').files[0]; if (!file) {alert('Veuillez sélectionner un fichier avant de valider la demande.'); return;}
+        message += '📝 Demande : ' + service + '\nDocument sélectionné : ' + file.name;
+        if (service === 'photocopie') {const count = panel.querySelector('.photocopy-count').value.trim(); if (count) message += '\nNombre de copies : ' + count;}
+        message += '\n\nMerci.';
+      }
+      waOpen(message);
+    }));
+
+    // Canal+ service forms
+    const canalServices = document.querySelectorAll('.canal-service');
+    canalServices.forEach(btn => btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.canalForm);
+      document.querySelectorAll('.canal-form').forEach(form => form.hidden = true);
+      if (target) {target.hidden = false; setTimeout(() => target.scrollIntoView({behavior: 'smooth', block: 'center'}), 40);}
+    }));
+    document.querySelectorAll('.send-canal').forEach(btn => btn.addEventListener('click', () => {
+      const form = btn.closest('.canal-form'); const type = btn.dataset.canalType;
+      const name = form.querySelector('.canal-name')?.value.trim() || ''; const phone = form.querySelector('.canal-phone')?.value.trim() || '';
+      if (!name || !phone) {alert('Veuillez renseigner votre nom et votre numéro de téléphone.'); return;}
+      let message = 'Bonjour Ndour Materiel\'s 👋\n\n📺 Demande Canal+ — ' + type + '\n\n👤 Nom : ' + name + '\n📞 Téléphone : ' + phone;
+      const ref = form.querySelector('.canal-ref')?.value.trim(); const plan = form.querySelector('.canal-plan')?.value.trim();
+      const equipment = form.querySelector('.canal-equipment')?.value.trim(); const details = form.querySelector('.canal-details')?.value.trim();
+      const address = form.querySelector('.canal-address')?.value.trim(); const installType = form.querySelector('.canal-install-type')?.value.trim(); const date = form.querySelector('.canal-date')?.value.trim();
+      if (ref) message += '\n🔢 Référence / décodeur : ' + ref;
+      if (plan) message += '\n📦 Formule / précision : ' + plan;
+      if (equipment) message += '\n📡 Équipement recherché : ' + equipment;
+      if (details) message += '\n📝 Précisions : ' + details;
+      if (address) message += '\n📍 Lieu d\'installation : ' + address;
+      if (installType) message += '\n🛠️ Type d\'installation : ' + installType;
+      if (date) message += '\n📅 Date souhaitée : ' + date;
+      message += '\n\nMerci de m\'indiquer la suite de ma demande.';
+      waOpen(message);
+    }));
+
+    // Assurance automobile request form
+    const insuranceOpen = document.querySelector('.insurance-open');
+    if (insuranceOpen) {insuranceOpen.addEventListener('click', () => {const form = document.getElementById(insuranceOpen.dataset.insuranceForm); if (form) {form.hidden = false; setTimeout(() => form.scrollIntoView({behavior: 'smooth', block: 'center'}), 40);} });}
+    const sendInsurance = document.querySelector('.send-insurance');
+    if (sendInsurance) {
+      sendInsurance.addEventListener('click', () => {
+        const form = document.getElementById('assurance-form');
+        const owner = form.querySelector('.insurance-owner').value.trim();
+        const cni = form.querySelector('.insurance-cni').value.trim();
+        const phone = form.querySelector('.insurance-phone').value.trim();
+        const plate = form.querySelector('.insurance-plate').value.trim();
+        const make = form.querySelector('.insurance-make').value.trim();
+        const model = form.querySelector('.insurance-model').value.trim();
+        const year = form.querySelector('.insurance-year').value.trim();
+        const type = form.querySelector('.insurance-type').value.trim();
+        const payment = form.querySelector('input[name="insurance-payment"]:checked');
+        if (!owner || !cni || !phone || !plate || !make || !model || !year || !type || !payment) {alert('Veuillez remplir tous les champs obligatoires et choisir un mode de paiement.'); return;}
+        const message = 'Bonjour Ndour Materiel\'s 👋\n\n🛡️ Demande d’assurance automobile\n\n👤 Propriétaire : ' + owner + '\n🪪 CNI : ' + cni + '\n📞 Téléphone : ' + phone + '\n🚘 Immatriculation : ' + plate + '\n🏷️ Marque : ' + make + '\n🚙 Modèle : ' + model + '\n📅 Année : ' + year + '\n🚗 Type de véhicule : ' + type + '\n💳 Mode de paiement souhaité : ' + payment.value + '\n\nMerci de m’indiquer la suite des démarches et les éventuelles pièces nécessaires.';
+        waOpen(message);
+      });
+    }
+  </script>
+</body>
+
+</html>
